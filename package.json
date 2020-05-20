@@ -1,0 +1,28 @@
+{
+  "name": "ccportfolio",
+  "version": "1.0.0",
+  "description": "# Reference",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchanyu/CCPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchanyu/CCPortfolio/issues"
+  },
+  "homepage": "https://github.com/cchanyu/CCPortfolio#readme"
+}
