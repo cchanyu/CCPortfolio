@@ -8,14 +8,48 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
+        exclude: /(node_modules|bower_components)/,
         options: { presets: ["@babel/env"] }
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          /** 
+          {
+            loader: 'postcss-loader',
+            options: {
+              //plugins: [autoprefixer({ browsers: ['> 5%', 'IE 10-11'] })]
+            }
+          },*/
+          'sass-loader',
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
+      {
+        test: /\.woff$/,
+        use: 'file-loader?name=fonts/[hash].[ext]'
+      },
+      {
+        test: /\.png$/,
+        use: 'file-loader?name=images/[hash].[ext]'
+      },
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
