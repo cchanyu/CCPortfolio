@@ -1,11 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
+import { withRouter } from 'react-router';
 import "./Navbar.scss";
 
-class Navbar extends Component{
-
-    render() {
-        return null;
-    }
+const Navbar = (props) => {
+    return (
+        <div className="navbar">
+            <div className="navbar__title">Chanyu's Portfolio</div>
+        </div>
+    );
 }
 
-export default Navbar;
+export default withRouter(Navbar);
