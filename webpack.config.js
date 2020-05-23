@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -17,17 +18,21 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
           'css-loader',
-          /** 
-          {
-            loader: 'postcss-loader',
-            options: {
-              //plugins: [autoprefixer({ browsers: ['> 5%', 'IE 10-11'] })]
-            }
-          },*/
           'sass-loader',
         ]
       },
@@ -54,11 +59,12 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'dist/'),
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, "public/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
