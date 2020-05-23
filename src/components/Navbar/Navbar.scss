@@ -1,7 +1,35 @@
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
     border-bottom: 1px solid black;
+    
+
+    &__content {
+        margin: 15px;
+        margin-left: 100px;
+
+        &--button{
+            font-size: 16px;
+            color: white;
+            margin: 50px;
+            transition: 0.3s;
+
+            &:hover {
+                color: orange;
+                font-size: 18px;
+            }
+        }
+    }
 
     &__title {
-        font-size: 50px;
+        color: white;
+        margin: 15px;
+        margin-right: 150px;
+        transition: 0.3s;
+        
+        &:hover {
+            color: orange;
+        }
     }
 }
