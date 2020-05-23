@@ -4,7 +4,7 @@ import "./Home.scss";
 const Home = (props) => {
     return (
         <div className="home">
-            <div className="home__item">Proj1</div>
+            <div className="home__item">Home</div>
         </div>
     );
 }

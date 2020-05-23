@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import data from "../server/project-content.json";
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+import Home from './components/Home/Home';
 import About from './components/About/About';
 import ProjectList from './components/ProjectList/ProjectList';
 import "./App.scss";
@@ -27,10 +28,11 @@ class App extends Component{
             <Switch>
               <Route exact path="/">
                 <div className="app__container">
-                  <ProjectList />
+                  <Home />
                 </div>
               </Route>
               <Route path="/about" component={About} />
+              <Route path="/project" component={ProjectList} />
             </Switch>
           </div>
         </Router>
