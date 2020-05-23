@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
-import data from "../server/project-content.json";
+import data from "./server/project-content.json";
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
