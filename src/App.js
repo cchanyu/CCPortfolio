@@ -25,17 +25,29 @@ class App extends Component{
         <Router>
           <Navbar />
           <div className="app__content">
-            <Sidebar />
             <Switch>
               <Route exact path="/">
                 <div className="app__container">
                   <Home />
                 </div>
               </Route>
-              <Route path="/about" component={About} />
-              <Route path="/project" component={ProjectList} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/about">
+                <div className="app__container">
+                  <About />
+                </div>
+              </Route>
+              <Route path="/project">
+                <div className="app__container">
+                  <ProjectList />
+                </div>
+              </Route>
+              <Route path="/contact">
+                <div className="app__container">
+                  <Contact />
+                </div>
+              </Route>
             </Switch>
+            <Sidebar />
           </div>
         </Router>
       </div>

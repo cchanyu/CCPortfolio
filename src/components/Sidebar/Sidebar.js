@@ -5,9 +5,9 @@ import "./Sidebar.scss";
 const Sidebar = (props) => {
     return (
         <div className="sidebar">
-            <div>
-                <img src={UserIcon} alt="icon" />
-                <div className="sidebar__item">About me</div>
+            <div className="sidebar__content">
+                <img className="sidebar__icon" src={UserIcon} alt="icon" />
+                <div className="sidebar__item">Chanyu Choung</div>
             </div>
         </div>
     );

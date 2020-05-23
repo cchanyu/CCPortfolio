@@ -1,6 +1,13 @@
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
 
     &__content {
+        color: white;
+
         opacity: 1;
         transform: translateX(0px) translateY(0px) translateZ(0px);
         transition: opacity 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s, transform 1000ms ease 0s;

@@ -1,8 +1,30 @@
 .sidebar {
-    border-right: 1px solid black;
-    min-height: 100vh;
+    border-left: 1px solid black;
+    width: 40%;
+    min-height: 928.15px;
+    max-height: 95vh;
+    background-color: black;
+
+    &__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__item {
+        color: white;
         font-size: 15px;
+    }
+
+    &__icon {
+        min-width: 100px;
+        max-width: 200px;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(2);
+        }
     }
 }
