@@ -3,118 +3,111 @@
     [
         {
             "id": 1,
-            "name": "Aacc",
-            "description": "Keeps the world safe; Consist of team members who has served the military.",
-            "avatarIMG" : "https://www.flaticon.com/free-icon/policeman_1022331?term=avatar&page=2&position=21",
-            "members": [
+            "name": "BDO RNG Enhancement Simulator",
+            "description": "Replica of my favorite video game called Black Desert Online. I reverse engineered and traced back their formula to create a simulation of their item enhancement system.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png",
+            "moreImage": [
                 {
-                    "firstName" : "Chris",
-                    "lastName" : "Estevez",
-                    "age": 22,
-                    "organization": ""
-
+                    "name" : "Google SpreadSheet",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic1.png"
                 },
                 {
-                    "firstName" : "Ralphie",
-                    "lastName" : "Perez",
-                    "age": 31,
-                    "organization": ""
-                    
+                    "name" : "Java GUI Development 1",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic2-1.png"
                 },
                 {
-                    "firstName" : "David",
-                    "lastName" : "moran-silva",
-                    "age": 20,
-                    "organization": ""
+                    "name" : "Java GUI Development 2",
+                    "image" : "https://github.com/cchanyu/BDORNGSim/blob/master/pic2-2.png"
                 },
                 {
-                    "firstName" : "Abraham",
-                    "lastName" : "Lara",
-                    "age": 22,
-                    "organization": ""
+                    "name" : "Intro Picture",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png"
                 }
             ],
-            "startDate": "01-29-20",
-            "endDate": "04-20-20",
-            "satisfaction": "Good",
-            "budget": 50000,
+            "date": "07-15-19",
+            "hours": 10,
             "blocker": 5,
-            "engineerManager": "Lawrence Faultleroy",
-            "manager": "Larry Blanco",
-            "isCompleted": false  
-
+            "language": "Java",
+            "teammate": "N/A",
+            "completed": true
         },
         {
             "id": 2,
-            "name": "Day",
-            "description": "Where the best front-end developers are group together to get the job done.",
-            "avatarIMG" : "https://www.flaticon.com/free-icon/boy_145867",
-            "members":[{
-
-            }],
-            "startDate": "02-01-20",
-            "endDate": "05-24-20",
-            "satisfaction": "Great",
-            "budget": 50000,
-            "blocker": 5,
-            "engineerManager": "Lawrence Faultleroy",
-            "manager": "Larry Blanco",
-            "isCompleted": false
+            "name": "The Audio Visualization",
+            "description": "Used Unity Engine to create an audio visualization program, it outputs based on each hertz's strength.",
+            "image" : "",
+            "date": "08-15-18",
+            "hours": 20,
+            "blocker": 8,
+            "language": "C#",
+            "teammate": "N/A",
+            "completed": true
         },
-
         {
             "id": 3,
-            "name": "Abcc",
-            "description": "This is the place, where all the dev ops ",
-            "avatarIMG" : "https://www.flaticon.com/free-icon/settings_1447744?term=avatar&page=2&position=29",
-            "members" : [{
-
-            }],
-            "startDate": "12-29-19",
-            "endDate": "1-22-20",
-            "satisfaction": "Okay",
-            "budget": 50000,
+            "name": "Roblox Parkour Game",
+            "description": "Roblox Studio offers easy and quick game making, they encourage players to make their own world using their assets. I made a 4-stage parkour game through their official tutorials.",
+            "image" : "",
+            "date": "04-15-19",
+            "hours": 25,
             "blocker": 8,
-            "engineerManager": "Lawrence Faultleroy",
-            "manager": "Larry Blanco",
-            "isCompleted": false
+            "language": "Lua",
+            "teammate": "N/A",
+            "completed": true
         },
         {
             "id": 4,
-            "name": "Omega",
-            "description": "Triple Major Geniuses are located here.",
-            "avatarIMG": "https://www.flaticon.com/free-icon/einstein_882991?term=avatar&page=4&position=32",
-            "members": [{
-
-            }],
-            "startDate": "03-05-18",
-            "endDate" : "07-12-18",
-            "satisfaction": "horrible",
-            "budget": 50000,
-            "blocker": 12,
-            "engineerManager": "Lawrence Faultleroy",
-            "manager": "Larry Blanco",
-            "isCompleted": true
-
+            "name": "Hexagon Mobile Game",
+            "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
+            "image" : "",
+            "date": "06-15-19",
+            "hours": 10,
+            "blocker": 7,
+            "language": "C#",
+            "teammate": "N/A",
+            "completed": true
         },
         {
             "id": 5,
-            "name": "Delta",
-            "description": "We will just right nonsense here, because we don't know ",
-            "avatarIMG" : "https://www.flaticon.com/free-icon/man_761824?term=avatar&page=1&position=6",
-            "members": [{
-
-            }],
-            "startDate": "05-20-15",
-            "endDate": "09-15-15",
-            "satisfaction": "bad",
-            "budget": 50000,
-            "blocker": 30,
-            "engineerManager": "Lawrence Faultleroy",
-            "manager": "Larry Blanco",
-            "isCompleted": false
+            "name": "Quick Chat Application",
+            "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png",
+            "moreImage": [
+                {
+                    "name" : "Initial GUI Screen",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png"
+                },
+                {
+                    "name" : "Connected to Input",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic2.png"
+                },
+                {
+                    "name" : "Message has been sent",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic3.png"
+                },
+                {
+                    "name" : "Message has been received",
+                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic4.png"
+                }
+            ],
+            "date": "10-15-19",
+            "hours": 25,
+            "blocker": 15,
+            "language": "Java",
+            "teammate": "Dana Jackson",
+            "completed": true
+        },
+        {
+            "id": 6,
+            "name": "HBC Project Summary",
+            "description": "All the ongoing and future projects are listed in this site to keep track of its status and easier to present to the higher-up from different departments to view",
+            "image" : "",
+            "date": "02-01-20",
+            "hours": 200,
+            "blocker": 50,
+            "language": "React.js",
+            "teammate": "Cherena Bradley, Chris Estevez",
+            "completed": true
         }
-    ],
-    "options" : ["Select Category", "Alphabetical", "Project Start Date", "Project End Date", "Satisfaction","Budget", "Number of Blockers", "Engineering Manager", "Project Manager"]
-
+    ]
 }
