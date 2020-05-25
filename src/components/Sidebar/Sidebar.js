@@ -1,13 +1,15 @@
 import React from "react";
-import UserIcon from '../../svg/user-solid.svg'
+import WinkIcon from '../../svg/wink-solid.svg'
 import "./Sidebar.scss";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
     return (
         <div className="sidebar">
-            <div>
-                <img src={UserIcon} alt="icon" />
-                <div className="sidebar__item">About me</div>
+            <div className="sidebar__content">
+                <img className="sidebar__icon" src={WinkIcon} alt="icon" />
+                <div className="sidebar__container">
+                    <div className="sidebar__item">{"Say 'hi' to Chanyu"}</div>
+                </div>
             </div>
         </div>
     );

@@ -30,5 +30,10 @@ i {
 
     &__content {
         display: flex;
+        flex-direction: row;
+    }
+
+    &__container {
+        width: 65%;
     }
 }

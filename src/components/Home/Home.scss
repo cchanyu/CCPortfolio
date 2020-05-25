@@ -1,8 +1,59 @@
+@import 'src/App';
+
 .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+
+    &__group {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__content {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        &--dim {
+            color: #ccc;
+        }
+    }
+
+    &__highlight {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__opacity {
         opacity: 1;
         transform: translateX(0px) translateY(0px) translateZ(0px);
         transition: opacity 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s, transform 1000ms ease 0s;
     }
+
+    &__button {
+        font-size: 30px;
+        color: #ffa500;
+        transition: 0.3s;
+
+        &:hover {
+            color: #ffd900;
+            font-size: 31px;
+        }
+    }
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

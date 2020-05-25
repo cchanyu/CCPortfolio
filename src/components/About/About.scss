@@ -1,0 +1,38 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    color: white;
+
+    &__order {
+        width: 80%;
+    }
+
+    &__header {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        font-size: 30px;
+        color: #ccc;
+        margin-bottom: 8px;
+
+        &--color {
+            color: white;
+            transition: 0.3s;
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+
+    &__margin {
+        margin-bottom: 35px;
+    }
+}
