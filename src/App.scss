@@ -27,7 +27,6 @@ i {
 .app {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
 
     &__content {
         display: flex;
@@ -35,6 +34,6 @@ i {
     }
 
     &__container {
-        width: 60%;
+        width: 65%;
     }
 }

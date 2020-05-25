@@ -38,7 +38,9 @@ class App extends Component{
               </Route>
               <Route path="/project">
                 <div className="app__container">
-                  <ProjectList />
+                  <ProjectList
+                    projectData={projectData}
+                  />
                 </div>
               </Route>
               <Route path="/contact">
