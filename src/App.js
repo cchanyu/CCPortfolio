@@ -48,6 +48,11 @@ class App extends Component{
                   <Contact />
                 </div>
               </Route>
+              <Route path="/CCPortfolio">
+                <div className="app__container">
+                  <Home />
+                </div>
+              </Route>
             </Switch>
             <Sidebar />
           </div>
