@@ -1,10 +1,64 @@
 .projectList {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
+    flex-direction: column;
+    height: 300px;
+    color: white;
 
     &__item {
+
+        &--name {
+            border-bottom: 1px white solid;
+            width: 300px;
+            height: 30px;
+            margin-left: 150px;
+            margin-bottom: 25px;
+        }
+
+        &--desc {
+            width: 500px;
+            margin-left: 150px;
+        }
+
+        &--lang {
+            border-bottom: 1px white solid;
+            width: 200px;
+            height: 30px;
+            margin-right: 150px;
+        }
+
+        &--date {
+            border-bottom: 1px white solid;
+            width: 200px;
+            height: 30px;
+            margin-right: 150px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    &__highlight {
         color: white;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 }

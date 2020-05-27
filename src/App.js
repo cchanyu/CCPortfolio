@@ -8,6 +8,7 @@ import About from './components/About/About';
 import ProjectList from './components/ProjectList/ProjectList';
 import Contact from './components/Contact/Contact';
 import "./App.scss";
+import ProjectHeader from "./components/ProjectList/ProjectHeader";
 
 class App extends Component{
   constructor(props) {
@@ -38,9 +39,12 @@ class App extends Component{
               </Route>
               <Route path="/project">
                 <div className="app__container">
-                  <ProjectList
-                    projectData={projectData}
-                  />
+                  <React.Fragment>
+                    <ProjectHeader />
+                    <ProjectList
+                      projectData={projectData}
+                    />
+                  </React.Fragment>
                 </div>
               </Route>
               <Route path="/contact">
