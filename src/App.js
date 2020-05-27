@@ -20,7 +20,6 @@ class App extends Component{
 
   render(){
     const { projectData } = this.state;
-    console.log(projectData);
     return(
       <div className="app">
         <Router>

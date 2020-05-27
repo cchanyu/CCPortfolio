@@ -1,0 +1,46 @@
+$whiteColor: #ffffff;
+$grayColor: #cccccc;
+$blackColor: #000000;
+$orangeColor: #ffa500;
+$borderBottom: 1px solid $whiteColor;
+
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
+@mixin align($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin color($background, $text) {
+    background-color: $background;
+    color: $text;
+}
+
+@mixin w-h($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin margin-bottom($margin) {
+    margin-bottom: $margin;
+}
+
+@mixin border-bottom($border) {
+    border-bottom: $border;
+}
+
+@mixin margin($margin) {
+    margin: $margin;
+}
+
+@mixin transition($sec) {
+    transition: $sec;
+}

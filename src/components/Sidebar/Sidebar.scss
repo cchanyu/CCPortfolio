@@ -1,9 +1,11 @@
+@import 'src/util/mixinFn';
+
 .sidebar {
-    border-left: 1px solid black;
-    width: 35%;
+    @include color($blackColor, $whiteColor);
+    @include w-h(35%, auto);
+    border-left: 1px solid $blackColor;
     min-height: 928.15px;
     max-height: 95vh;
-    background-color: black;
 
     &[trackLocation="3"]{
         position: fixed;
@@ -12,33 +14,29 @@
     }
 
     &__content {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(column);
+        @include w-h(auto, 100%);
+        @include align(center, center);
     }
 
     &__container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flex(row);
+        @include align(center,center);
     }
 
     &__item {
-        color: white;
-        font-size: 15px;
+        @include color(auto, $whiteColor);
+        @include font(15px, auto);
     }
 
     &__icon {
+        @include transition(0.3s);
+        @include margin-bottom(12px);
         min-width: 100px;
         max-width: 200px;
-        transition: 0.3s;
-        margin-bottom: 12px;
 
         &--tiny {
-            width: 25px;
+            @include w-h(25px, auto);
         }
 
         &:hover {

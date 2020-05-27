@@ -6,10 +6,10 @@ import "./Sidebar.scss";
 
 const Sidebar = (props) => {
     const { location } = props;
-    const trackLocation = pageLocation(location);
+    const tracklocation = pageLocation(location);
 
     return (
-        <div className="sidebar" trackLocation={trackLocation}>
+        <div className="sidebar" trackLocation={tracklocation}>
             <div className="sidebar__content">
                 <img className="sidebar__icon" src={WinkIcon} alt="icon" />
                 <div className="sidebar__container">
