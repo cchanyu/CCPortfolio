@@ -13,3 +13,6 @@ These are the sites that I referenced while building my portfolio sites.
 
 #### Refresh on CAN NOT GET /URL
 - https://tylermcginnis.com/react-router-cannot-get-url-refresh/
+
+#### Hide overflow, Allow scroll
+- https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll

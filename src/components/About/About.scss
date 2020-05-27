@@ -1,38 +1,36 @@
+@import 'src/util/mixinFn';
+
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 100%;
-    color: white;
+    @include flex(column);
+    @include align(center, center);
+    @include color($blackColor, $whiteColor);
+    @include w-h(auto, 100%);
 
     &__order {
-        width: 80%;
+        @include w-h(80%, auto);
     }
 
     &__header {
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 20px;
+        @include font(50px, bold);
+        @include margin-bottom(20px);
     }
 
     &__item {
-        font-size: 30px;
-        color: #ccc;
-        margin-bottom: 8px;
+        @include font(30px, auto);
+        @include color(auto, $grayColor);
+        @include margin-bottom(8px);
 
         &--color {
-            color: white;
-            transition: 0.3s;
+            @include color(auto, $whiteColor);
+            @include transition(0.3s);
 
             &:hover {
-                color: orange;
+                @include color(auto, $orangeColor);
             }
         }
     }
 
     &__margin {
-        margin-bottom: 35px;
+        @include margin-bottom(35px);
     }
 }

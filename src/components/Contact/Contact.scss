@@ -1,48 +1,45 @@
+@import 'src/util/mixinFn';
+
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 100%;
-    color: white;
+    @include flex(column);
+    @include align(center, center);
+    @include color($blackColor, $whiteColor);
+    @include w-h(auto, 100%);
 
     &__order {
         
     }
 
     &__group {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
     }
 
     &__header {
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 20px;
+        @include font(50px, bold);
+        @include margin-bottom(20px);
     }
 
     &__item {
-        font-size: 30px;
-        margin-bottom: 15px;
-        color: #ccc;
-        transition: 0.3s;
+        @include font(30px, auto);
+        @include margin-bottom(15px);
+        @include color(auto, $grayColor);
+        @include transition(0.3s);
 
         &:hover {
-            color: white;
+            @include color(auto, $whiteColor);
         }
     }
 
     &__link {
-        font-size: 30px;
-        margin-bottom: 15px;
+        @include font(30px, auto);
+        @include margin-bottom(15px);
+        @include color(auto, $grayColor);
+        @include transition(0.3s);
         text-decoration: underline;
         cursor: pointer;
-        color: #ccc;
-        transition: 0.3s;
 
         &:hover {
-            color: orange;
+            @include color(auto, $orangeColor);
         }
     }
 }

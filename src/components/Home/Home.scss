@@ -1,49 +1,38 @@
-@import 'src/App';
+@import 'src/util/mixinFn';
 
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 100%;
+    @include flex(column);
+    @include align(center, center);
+    @include color($blackColor, $whiteColor);
+    @include w-h(auto, 100%);
 
     &__group {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
     }
 
     &__content {
-        color: white;
-        font-size: 30px;
-        margin-bottom: 10px;
+        @include color(auto, $whiteColor);
+        @include margin-bottom(10px);
+        @include font(30px, auto);
 
         &--dim {
-            color: #ccc;
+            @include color(auto, $grayColor);
         }
     }
 
     &__highlight {
-        color: white;
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    &__opacity {
-        opacity: 1;
-        transform: translateX(0px) translateY(0px) translateZ(0px);
-        transition: opacity 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s, transform 1000ms ease 0s;
+        @include font(50px, bold);
+        @include margin-bottom(10px);
     }
 
     &__button {
-        font-size: 30px;
-        color: #ffa500;
-        transition: 0.3s;
+        @include font(30px, auto);
+        @include color(auto, $orangeColor);
+        @include transition(0.3s);
 
         &:hover {
-            color: #ffd900;
-            font-size: 31px;
+            @include font(31px, auto);
+            @include color(auto, #ffd900);
         }
     }
 }

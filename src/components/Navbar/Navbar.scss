@@ -1,8 +1,10 @@
+@import 'src/util/mixinFn';
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    border-bottom: 1px solid black;
+    @include flex(auto);
+    @include align(space-between, auto);
+    @include color($blackColor, $whiteColor);
+    @include border-bottom(1px solid black);
     min-height: 48.85px;
     max-height: 5vh;
     position: -webkit-sticky; /* Safari */
@@ -10,30 +12,30 @@
     top: 0;
 
     &__content {
-        margin: 15px;
+        @include margin(15px);
         margin-left: 100px;
 
         &--button{
-            font-size: 16px;
-            color: white;
-            margin: 50px;
-            transition: 0.3s;
+            @include color(auto, $whiteColor);
+            @include margin(50px);
+            @include font(16px, auto);
+            @include transition(0.3s);
 
             &:hover {
-                color: orange;
-                font-size: 18px;
+                @include color(auto, $orangeColor);
+                @include font(18px, auto);
             }
         }
     }
 
     &__title {
-        color: white;
-        margin: 15px;
+        @include color(auto, $whiteColor);
+        @include margin(15px);
+        @include transition(0.3s);
         margin-right: 150px;
-        transition: 0.3s;
         
         &:hover {
-            color: orange;
+            @include color(auto, $orangeColor);
         }
     }
 }

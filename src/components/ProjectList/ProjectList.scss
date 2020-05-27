@@ -1,64 +1,56 @@
+@import 'src/util/mixinFn';
+
 .projectList {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    color: white;
+    @include flex(column);
+    @include w-h(auto, 300px);
+    @include color(auto, $whiteColor);
 
     &__item {
 
         &--name {
-            border-bottom: 1px white solid;
-            width: 300px;
-            height: 30px;
+            @include w-h(300px, 30px);
+            @include margin-bottom(25px);
+            @include border-bottom($borderBottom);
             margin-left: 150px;
-            margin-bottom: 25px;
         }
 
         &--desc {
-            width: 500px;
+            @include w-h(500px, 0);
             margin-left: 150px;
         }
 
         &--lang {
-            border-bottom: 1px white solid;
-            width: 200px;
-            height: 30px;
+            @include border-bottom($borderBottom);
+            @include w-h(200px, 30px);
             margin-right: 150px;
         }
 
         &--date {
-            border-bottom: 1px white solid;
-            width: 200px;
-            height: 30px;
+            @include border-bottom($borderBottom);
+            @include w-h(200px, 30px);
             margin-right: 150px;
         }
     }
 
     &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex(row);
+        @include align(space-between, auto);
     }
 
     &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex(row);
+        @include align(space-between, auto);
     }
-
-
 }
 
 .project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+    @include flex(auto);
+    @include align(center, center);
+    @include w-h(auto, 200px);
 
     &__highlight {
-        color: white;
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 10px;
+        @include color(auto, $whiteColor);
+        @include font(50px, bold);
+        @include margin-bottom(10px);
     }
 }
