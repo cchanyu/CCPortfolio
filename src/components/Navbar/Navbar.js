@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import "./Navbar.scss";
 
@@ -17,4 +16,4 @@ const Navbar = () => {
     );
 }
 
-export default withRouter(Navbar);
+export default Navbar;

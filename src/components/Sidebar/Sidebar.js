@@ -1,10 +1,15 @@
 import React from "react";
-import WinkIcon from '../../svg/wink-solid.svg'
+import { withRouter } from 'react-router';
+import WinkIcon from '../../svg/wink-solid.svg';
+import pageLocation from '../../util/pageLocation';
 import "./Sidebar.scss";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+    const { location } = props;
+    const trackLocation = pageLocation(location);
+
     return (
-        <div className="sidebar">
+        <div className="sidebar" trackLocation={trackLocation}>
             <div className="sidebar__content">
                 <img className="sidebar__icon" src={WinkIcon} alt="icon" />
                 <div className="sidebar__container">
@@ -15,4 +20,4 @@ const Sidebar = () => {
     );
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

@@ -5,6 +5,12 @@
     max-height: 95vh;
     background-color: black;
 
+    &[trackLocation="3"]{
+        position: fixed;
+        bottom: -344px;
+        right: 0px;
+    }
+
     &__content {
         display: flex;
         height: 100%;

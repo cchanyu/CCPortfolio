@@ -24,10 +24,11 @@
                     "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png"
                 }
             ],
-            "date": "07-15-19",
+            "date": "07-15-2019",
             "hours": 10,
             "blocker": 5,
             "language": "Java",
+            "role": "N/A",
             "teammate": "N/A",
             "completed": true
         },
@@ -36,10 +37,11 @@
             "name": "The Audio Visualization",
             "description": "Used Unity Engine to create an audio visualization program, it outputs based on each hertz's strength.",
             "image" : "",
-            "date": "08-15-18",
+            "date": "08-15-2018",
             "hours": 20,
             "blocker": 8,
             "language": "C#",
+            "role": "N/A",
             "teammate": "N/A",
             "completed": true
         },
@@ -48,10 +50,11 @@
             "name": "Roblox Parkour Game",
             "description": "Roblox Studio offers easy and quick game making, they encourage players to make their own world using their assets. I made a 4-stage parkour game through their official tutorials.",
             "image" : "",
-            "date": "04-15-19",
+            "date": "04-15-2019",
             "hours": 25,
             "blocker": 8,
             "language": "Lua",
+            "role": "N/A",
             "teammate": "N/A",
             "completed": true
         },
@@ -60,10 +63,11 @@
             "name": "Hexagon Mobile Game",
             "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
             "image" : "",
-            "date": "06-15-19",
+            "date": "06-15-2019",
             "hours": 10,
             "blocker": 7,
             "language": "C#",
+            "role": "N/A",
             "teammate": "N/A",
             "completed": true
         },
@@ -90,10 +94,11 @@
                     "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic4.png"
                 }
             ],
-            "date": "10-15-19",
+            "date": "10-15-2019",
             "hours": 25,
             "blocker": 15,
             "language": "Java",
+            "role": "N/A",
             "teammate": "Dana Jackson",
             "completed": true
         },
@@ -102,10 +107,11 @@
             "name": "HBC Project Summary",
             "description": "All the ongoing and future projects are listed in this site to keep track of its status and easier to present to the higher-up from different departments to view",
             "image" : "",
-            "date": "02-01-20",
+            "date": "02-01-2020",
             "hours": 200,
             "blocker": 50,
             "language": "React.js",
+            "role": "N/A",
             "teammate": "Cherena Bradley, Chris Estevez",
             "completed": true
         }
