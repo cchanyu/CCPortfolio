@@ -1,0 +1,60 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    height: 68vh;
+    overflow: auto;
+}
+
+.contact--title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact--email {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.form--group {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.form--control {
+    color: white;
+    height: auto;
+    width: 500px;
+}
+
+.form--control:active, .form--control:focus {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn {
+    margin-top: 20px;
+    text-align: center;
+    line-height: center;
+    background: #585858;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.btn:hover {
+    background-color: #999 !important;
+    border: 3px solid white !important;
+    color: white !important;
+}

@@ -1,0 +1,11 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    height: 68vh;
+}

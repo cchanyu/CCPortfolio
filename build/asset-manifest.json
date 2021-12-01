@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/CCPortfolio/static/css/main.b1833678.chunk.css",
-    "main.js": "/CCPortfolio/static/js/main.c1803bca.chunk.js",
-    "main.js.map": "/CCPortfolio/static/js/main.c1803bca.chunk.js.map",
-    "runtime-main.js": "/CCPortfolio/static/js/runtime-main.bb66afeb.js",
-    "runtime-main.js.map": "/CCPortfolio/static/js/runtime-main.bb66afeb.js.map",
-    "static/js/2.2cff10a4.chunk.js": "/CCPortfolio/static/js/2.2cff10a4.chunk.js",
-    "static/js/2.2cff10a4.chunk.js.map": "/CCPortfolio/static/js/2.2cff10a4.chunk.js.map",
-    "index.html": "/CCPortfolio/index.html",
-    "precache-manifest.30902b0f33583b990611741b34e6519f.js": "/CCPortfolio/precache-manifest.30902b0f33583b990611741b34e6519f.js",
-    "service-worker.js": "/CCPortfolio/service-worker.js",
-    "static/css/main.b1833678.chunk.css.map": "/CCPortfolio/static/css/main.b1833678.chunk.css.map",
-    "static/js/2.2cff10a4.chunk.js.LICENSE.txt": "/CCPortfolio/static/js/2.2cff10a4.chunk.js.LICENSE.txt",
-    "static/media/wink-solid.svg": "/CCPortfolio/static/media/wink-solid.c6a738ca.svg"
+    "main.css": "/static/css/main.2b0a7657.chunk.css",
+    "main.js": "/static/js/main.38d75e67.chunk.js",
+    "main.js.map": "/static/js/main.38d75e67.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e39f3cc8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e39f3cc8.js.map",
+    "static/js/2.c887075e.chunk.js": "/static/js/2.c887075e.chunk.js",
+    "static/js/2.c887075e.chunk.js.map": "/static/js/2.c887075e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2b0a7657.chunk.css.map": "/static/css/main.2b0a7657.chunk.css.map",
+    "static/js/2.c887075e.chunk.js.LICENSE.txt": "/static/js/2.c887075e.chunk.js.LICENSE.txt",
+    "static/media/battery-empty-solid.1d2a5373.svg": "/static/media/battery-empty-solid.1d2a5373.svg",
+    "static/media/battery-full-solid.8b47db02.svg": "/static/media/battery-full-solid.8b47db02.svg",
+    "static/media/battery-half-solid.5904ace6.svg": "/static/media/battery-half-solid.5904ace6.svg",
+    "static/media/battery-quarter-solid.2378ac2d.svg": "/static/media/battery-quarter-solid.2378ac2d.svg",
+    "static/media/battery-three-qt-solid.dbfdb6e7.svg": "/static/media/battery-three-qt-solid.dbfdb6e7.svg",
+    "static/media/edit-solid.506925ed.svg": "/static/media/edit-solid.506925ed.svg",
+    "static/media/gamepad-solid.ede3088e.svg": "/static/media/gamepad-solid.ede3088e.svg",
+    "static/media/home-solid.38353f81.svg": "/static/media/home-solid.38353f81.svg",
+    "static/media/id-card-solid.43c93870.svg": "/static/media/id-card-solid.43c93870.svg",
+    "static/media/list-alt-solid.17ed4dde.svg": "/static/media/list-alt-solid.17ed4dde.svg",
+    "static/media/times-circle-solid.8abbdc17.svg": "/static/media/times-circle-solid.8abbdc17.svg",
+    "static/media/user-solid.4e9e99c1.svg": "/static/media/user-solid.4e9e99c1.svg",
+    "static/media/wifi-solid.bdfe4afa.svg": "/static/media/wifi-solid.bdfe4afa.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb66afeb.js",
-    "static/js/2.2cff10a4.chunk.js",
-    "static/css/main.b1833678.chunk.css",
-    "static/js/main.c1803bca.chunk.js"
+    "static/js/runtime-main.e39f3cc8.js",
+    "static/js/2.c887075e.chunk.js",
+    "static/css/main.2b0a7657.chunk.css",
+    "static/js/main.38d75e67.chunk.js"
   ]
 }

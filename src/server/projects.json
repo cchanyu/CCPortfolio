@@ -1,0 +1,77 @@
+{
+    "projects" : 
+    [
+        {
+            "id": 1,
+            "name": "BDO RNG Enhancement Simulator",
+            "description": "After learning how to use GUI in Java, I utilized my knowledge and created a system that mimic my favorite video game's enhancement system.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/11_bdosim.png",
+            "date": "07-15-2019",
+            "language": "Java"
+        },
+        {
+            "id": 2,
+            "name": "The Audio Visualization",
+            "description": "Used Unity game engine to create an audio visualization program, it outputs based on each hertz's strength. This tested my ability to use the API.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/12_audio.png",
+            "date": "08-15-2018",
+            "language": "C#"
+        },
+        {
+            "id": 3,
+            "name": "Obby In the Room",
+            "description": "Used Roblox game engine to create an obstacle game, which a user has to overcome by moving around and jumping from a platform to another. It offers over 30 completed stages to beat.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/13_obby.jpg",
+            "date": "04-15-2019",
+            "language": "Lua"
+        },
+        {
+            "id": 4,
+            "name": "Hexagon Mobile Game",
+            "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/14_hexa.png",
+            "date": "06-15-2019",
+            "language": "C#"
+        },
+        {
+            "id": 5,
+            "name": "Quick Chat Application",
+            "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/15_udpchat.png",
+            "date": "10-15-2019",
+            "language": "Java"
+        },
+        {
+            "id": 6,
+            "name": "HBC Project Summary",
+            "description": "Used for internal employees at HBC. It helps them keep track the status of their task and makes it easier to report to the VP. VP uses it to share it with other department to show their progress.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/17_projsum.png",
+            "date": "02-01-2020",
+            "language": "React.js"
+        },
+        {
+            "id": 8,
+            "name": "Professional Clothing Shop",
+            "description": "It's a part of Roblox Metaverse program. It's a virtual clothing shop, where users could go around the store and select out the clothes they want to try or buy.It earns Robux currency, which can be used in other games.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/18_professional.png",
+            "date": "07-15-2020",
+            "language": "Lua"
+        },
+        {
+            "id": 9,
+            "name": "2D Platformer Game",
+            "description": "A side scrolling platformer game. The game is live inside of Roblox. User needs to dodge the traps or monsters while collecting coins throughout the map and beat the final boss to win the game.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/19_platformer.png",
+            "date": "05-15-2021",
+            "language": "Lua"
+        },
+        {
+            "id": 10,
+            "name": "Lottery Prediction AI",
+            "description": "Uses multiple math libraries in Python to predict the potential set of number that could come out, based on the previous data with the machine learning techniques.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/20_lotto.png",
+            "date": "03-15-2021",
+            "language": "Python"
+        }
+    ]
+}

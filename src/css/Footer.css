@@ -1,0 +1,43 @@
+.footer {
+    background-color: #3b3b3b;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+}
+
+.footer--inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    border-top: white 2px solid;
+}
+
+.gamepad:hover, .footer--inside--right:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+.footer--inside--right {
+    display: flex;
+    text-align: center;
+}
+
+.icon, .icon2 {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.text {
+    padding: 0 20px 0 10px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}

@@ -1,0 +1,12 @@
+.hs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    height: 68vh;
+    width: 50vw;
+}
+
+.title--game {
+    margin-bottom: 30px;
+}
