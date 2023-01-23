@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/ContactMe.css'
+import '../css/Contact.css';
 
-class ContactMe extends React.Component {
+class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,26 +31,26 @@ class ContactMe extends React.Component {
 
         return(
             <div className="contact">
-                <div className="contact--title">Contact Form</div>
-                <div className="contact--email">Email: Chanyu.Choung@lc.cuny.edu</div>
-                <form id="contact--form" className="contact--form">
-                <div className="form--group">
+                <div className="contact-title">Contact Form</div>
+                <div className="contact-email">Email: Chanyu.Choung@lc.cuny.edu</div>
+                <form id="contact-form" className="contact-form">
+                <div className="contact-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form--control" value={name} onChange={onNameChange.bind(this)} />
+                    <input type="text" className="contact-input" value={name} onChange={onNameChange.bind(this)} />
                 </div>
-                <div className="form--group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form--control" value={email} onChange={onEmailChange.bind(this)} />
+                <div className="contact-group">
+                    <label htmlFor="exampleInputEmail1">Email</label>
+                    <input type="email" className="contact-input" value={email} onChange={onEmailChange.bind(this)} />
                 </div>
-                <div className="form--group">
+                <div className="contact-group">
                     <label htmlFor="message">Message</label>
-                    <textarea className="form--control" rows="5" value={message} onChange={onMessageChange.bind(this)} />
+                    <textarea className="contact-input" rows="5" value={message} onChange={onMessageChange.bind(this)} />
                 </div>
-                <button type="submit" className="btn" onClick={handleSubmit.bind(this)}>Submit</button>
+                <button type="submit" className="contact-button" onClick={handleSubmit.bind(this)}>Submit</button>
                 </form>
             </div>
         )
     }
 }
 
-export default ContactMe;
+export default Contact;

@@ -22,7 +22,7 @@
         {
             "id": 4,
             "name": "My Resume",
-            "description": "My Resume can be seen at 'https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg'. Github Username: Cchanyu",
+            "description": "My Resume can be seen at 'https://raw.githubusercontent.com/cchanyu/ cchanyu.github.io/master/src/contents/Resume.jpg'. Github Username: Cchanyu",
             "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/04_resume.png",
             "url" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg"
         },

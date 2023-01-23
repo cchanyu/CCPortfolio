@@ -3,11 +3,11 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import projectData from "./server/projects.json";
 import aboutmeData from "./server/aboutme.json";
 
-import HomeScreen from './components/HomeScreen.js';
-import AboutMe from './components/AboutMe.js';
-import Projects from './components/Projects.js';
-import ContactMe from './components/ContactMe.js';
-import Navbar from './components/Navbar.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Project from './components/Project.js';
+import Contact from './components/Contact.js';
+import Topbar from './components/Topbar.js';
 import Footer from './components/Footer.js';
 
 import HomeIcon from './icon/home-solid.svg';
@@ -30,45 +30,46 @@ class App extends Component{
 
     return (
       <div className="App">
-        <Navbar className="navbar" />
-        <div className="invisNavbar" />
+        <Topbar className="top" />
+        <div className="top-invis" />
 
         {/* React Route */}
         <Routes className="route">
-          <Route exact path="/" element={<HomeScreen />}/>
+          <Route exact path="/CCPortfolio" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
 
-          <Route path="about" element={<AboutMe aboutmeData={aboutmeData} />}/>
+          <Route path="about" element={<About aboutmeData={aboutmeData} />}/>
           
-          <Route path="projects" element={<Projects projectData={projectData} />}/>
+          <Route path="project" element={<Project projectData={projectData} />}/>
 
-          <Route path="contact" element={<ContactMe />}/>
+          <Route path="contact" element={<Contact />}/>
         </Routes>
 
         {/* Navigation */}
         <nav className="nav">
-          <NavLink className="link" exact to="/" activeClassName="active">
-            <img className="icon" src={HomeIcon} alt="home" />
-            <div className="hstext">Home</div>
+          <NavLink className="nav-link" exact to="/CCPortfolio" activeClassName="active">
+            <img className="nav-icon icon" src={HomeIcon} alt="home" />
+            <div className="nav-text">Home</div>
           </NavLink>
 
-          <NavLink className="link" to="/about" activeClassName="active">
-            <img className="icon" src={AboutIcon} alt="about" />
-            <div className="hstext">About</div>
+          <NavLink className="nav-link" to="/about" activeClassName="active">
+            <img className="nav-icon icon" src={AboutIcon} alt="about" />
+            <div className="nav-text">About</div>
           </NavLink>
 
-          <NavLink className="link" to="/projects" activeClassName="active">
-            <img className="icon" src={ProjectIcon} alt="project" />
-            <div className="hstext">Project</div>
+          <NavLink className="nav-link" to="/project" activeClassName="active">
+            <img className="nav-icon icon" src={ProjectIcon} alt="project" />
+            <div className="nav-text">Project</div>
           </NavLink>
 
-          <NavLink className="link" to="/contact" activeClassName="active">
-            <img className="icon" src={ContactIcon} alt="contact" />
-            <div className="hstext">Contact</div>
+          <NavLink className="nav-link" to="/contact" activeClassName="active">
+            <img className="nav-icon icon" src={ContactIcon} alt="contact" />
+            <div className="nav-text">Contact</div>
           </NavLink>
         </nav>
 
         <Footer />
-        <div className="invisFooter" />
+        <div className="footer-invis" />
       </div>
     );
   }

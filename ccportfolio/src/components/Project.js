@@ -2,9 +2,9 @@ import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 import ProjectPad from './ProjectPad';
 import ScrollContainer from "react-indiana-drag-scroll";
-import '../css/AboutMe.css'
+import '../css/Project.css';
 
-const AboutMe = ({ aboutmeData }) => {
+const Project = ({ projectData }) => {
     const scrollRef = createRef();
     const clickHandler = () => {};
     const enableKeyboardCursorToScroll = () => {
@@ -15,21 +15,21 @@ const AboutMe = ({ aboutmeData }) => {
 
     return(
         <div className="project">
-            <ScrollContainer className="container">
+            <ScrollContainer className="project-container">
                 <section
-                    className="tiles"
+                    className="project-tiles"
                     onFocus={enableKeyboardCursorToScroll}
                     ref={scrollRef}
                 >
-                    {aboutmeData.map((aboutme) => {
+                    {projectData.slice(0).reverse().map((project) => {
                         return (
-                            <div key={aboutme.id}>
+                            <div key={project.id}>
                                 <ProjectPad
-                                    key={aboutme.id}
-                                    content={aboutme}
+                                    key={project.id}
+                                    content={project}
                                     onClick={clickHandler}
                                 />
-                                <div className="data--title text">{aboutme.name}</div>
+                                <div className="project-title text">{project.name} - {project.language}</div>
                             </div>
                         )
                     })}
@@ -39,8 +39,8 @@ const AboutMe = ({ aboutmeData }) => {
     )
 }
 
-AboutMe.propTypes = {
-    aboutmeData: PropTypes.arrayOf(PropTypes.object).isRequired
+Project.propTypes = {
+    projectData: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
-export default AboutMe;
+export default Project;

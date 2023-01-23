@@ -8,19 +8,19 @@
     overflow: auto;
 }
 
-.contact--title {
+.contact-title {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.contact--email {
+.contact-email {
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 50px;
 }
 
-.form--group {
+.contact-group {
     display: flex;
     justify-content: space-between;
     width: 40vw;
@@ -28,18 +28,18 @@
     padding-bottom: 5px;
 }
 
-.form--control {
+.contact-input {
     color: white;
     height: auto;
     width: 500px;
 }
 
-.form--control:active, .form--control:focus {
+.contact-input:active, .contact-input:focus {
     color: white;
     border: 1px solid white;
 }
 
-.btn {
+.contact-button {
     margin-top: 20px;
     text-align: center;
     line-height: center;
@@ -50,39 +50,39 @@
     height: 100px;
 }
 
-.btn:hover {
+.contact-button:hover {
     background-color: #999 !important;
     border: 3px solid white !important;
     color: white !important;
 }
 
 @media (max-width: 1024px) {
-    .contact--email {
-        margin-bottom: 1vh;
-    }
-
-    .contact {
-        max-height: 68vh !important;
-        justify-content: center;
-        align-items: center;
+    .contact-email {
+        display: none;
     }
     
-    .contact--form {
+    .contact-form {
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-    .form--group {
+    .contact-group, .contact-input {
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .contact-group {
         display: block;
-        width: 80vw;
         margin: 0;
     }
 
-    .form--control {
+    .contact-input {
         height: 5vh;
     }
 
-    .btn {
+    .contact-button {
         border-radius: 5px;
         width: 100px;
         height: 50px;
@@ -92,5 +92,11 @@
     label {
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 700px) {
+    .contact-email {
+        display: none;
     }
 }

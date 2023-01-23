@@ -1,18 +1,18 @@
 import React from 'react';
-import '../css/Footer.css'
-import Times from '../icon/times-circle-solid.svg';
-import GamePad from '../icon/gamepad-solid.svg';
+import TimesIcon from '../icon/times-circle-solid.svg';
+import GamePadIcon from '../icon/gamepad-solid.svg';
+import '../css/Footer.css';
 
 const Footer = () => {
     return(
         <div className="footer">
-            <div className="footer--inside">
-                <div className="footer--inside--left">
-                    <img className="gamepad icon" src={GamePad} alt="gamepad" />
+            <div className="footer-inside">
+                <div className="footer-left">
+                    <img className="footer-gamepad icon" src={GamePadIcon} alt="footer-gamepad" />
                 </div>
-                <div className="footer--inside--right">
-                    <img className="times icon2" src={Times} alt="times" />
-                    <div className="text">Select</div>
+                <div className="footer-right">
+                    <img className="footer-times icon2" src={TimesIcon} alt="footer-times" />
+                    <div className="footer-text text">Select</div>
                 </div>
             </div>
         </div>
