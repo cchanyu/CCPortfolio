@@ -1,0 +1,28 @@
+.project {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100vw !important;
+    overflow: hidden !important;
+    overflow-x: scroll !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100vw !important;
+}
+
+@media (max-height: 700px) {
+    .project {
+        max-height: 68vh !important;
+    }
+}

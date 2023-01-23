@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  background-color: #202020;
+}
+
+.invisNavbar {
+  height: 12vh;
+}
+
+.invisFooter {
+  height: 10vh;
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  left: 10vw;
+  bottom: 10vh;
+  width: 80vw;
+  z-index: 5;
+  background-color: #3b3b3b;
+}
+
+.link {
+  width: 75px;
+  z-index: 5;
+}
+
+.icon {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 12px 0 12px;
+}
+
+.icon:hover + .hstext {
+  display: block;
+}
+
+.hstext {
+  display: none;
+  margin: 0 12px 0 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+
+/* Active tag comes from NavRoute, whichever one is clicked has className: active */
+.active {
+  z-index: 10;
+  transform: scale(1.2);
+}
+
+.active > div {
+  z-index: 10;
+  display: block;
+}
+
+.hs, .contact, .project, .about {
+  display: flex;
+  position: absolute;
+  left: 10vw;
+  height: 68vh;
+  width: 80vw;
+  background-color: #3b3b3b;
+}

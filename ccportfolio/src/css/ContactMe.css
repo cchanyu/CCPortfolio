@@ -1,0 +1,96 @@
+.contact {
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.contact--title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact--email {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.form--group {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.form--control {
+    color: white;
+    height: auto;
+    width: 500px;
+}
+
+.form--control:active, .form--control:focus {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn {
+    margin-top: 20px;
+    text-align: center;
+    line-height: center;
+    background: #585858;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.btn:hover {
+    background-color: #999 !important;
+    border: 3px solid white !important;
+    color: white !important;
+}
+
+@media (max-width: 1024px) {
+    .contact--email {
+        margin-bottom: 1vh;
+    }
+
+    .contact {
+        max-height: 68vh !important;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact--form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form--group {
+        display: block;
+        width: 80vw;
+        margin: 0;
+    }
+
+    .form--control {
+        height: 5vh;
+    }
+
+    .btn {
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        margin-top: 0;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
