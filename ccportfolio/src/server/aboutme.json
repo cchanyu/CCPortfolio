@@ -4,39 +4,39 @@
         {
             "id": 1,
             "name": "Self Introduction",
-            "description": "Greetings. My name is Chanyu Choung. I'm from South Korea and I'm currently a student at Lehman College pursuing for Bachelor's Degree.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/01_intro.jpg"
+            "description": "Hello, My name is Chanyu Choung. I have a Korean background and I'm a senior student at Lehman College, CUNY.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/01_intro.jpg"
         },
         {
             "id": 2,
             "name": "My Majors",
-            "description": "I currently major in both Computer Science and CGI. I'm expected to graduate at Fall of 2022. I love video games and both of my majors help with me creating my very own video game.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/02_major.png"
+            "description": "I double major in Computer Science and CGI. I'm expected to graduate at Spring 2023. I love video games and both of my majors help with me creating my very own video game.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/02_major.png"
         },
         {
             "id": 3,
             "name": "My Interests",
             "description": "My interests are watching K-Drama or Youtube, listening to the pop musics and playing video games. I don't SNS, but I socialize with people who have similar interests to me.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/03_interests.png"
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/03_interests.png"
         },
         {
             "id": 4,
             "name": "My Resume",
-            "description": "My Resume can be seen at 'https://raw.githubusercontent.com/cchanyu/ cchanyu.github.io/master/src/contents/Resume.jpg'. Github Username: Cchanyu",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/04_resume.png",
+            "description": "My Resume can be seen at 'https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg'. Github Username: Cchanyu",
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/04_resume.png",
             "url" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg"
         },
         {
             "id": 5,
             "name": "My Dream",
-            "description": "My dream is to become a full-time software engineer at New York. I'm willing to try my best to land a job and give it all I got. It's not easy, but it's a set of challenge that I have to overcome.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/05_dream.png"
+            "description": "My dream is to become a full-time software engineer at New York and live a normal quiet life.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/05_dream.png"
         },
         {
             "id": 6,
             "name": "My Strength",
-            "description": "My strength comes from being into it. I fully dedicate myself and forget everything else, but to the task itself. I burn with the passion, motivation and dedication.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/06_strengths.png"
+            "description": "When I like something, I repeat it over 7-times to really understand it and I enjoy the process of it. That's how you'd know if I like something.",
+            "image" : "https://raw.githubusercontent.com/cchanyu/CCPortfolio/master/ccportfolio/src/contents/06_strengths.png"
         }
     ]
 }
