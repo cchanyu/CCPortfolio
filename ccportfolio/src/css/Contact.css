@@ -58,23 +58,23 @@
 
 @media (max-width: 1024px) {
     .contact-email {
-        margin-bottom: 1vh;
-    }
-
-    .contact {
-        max-height: 68vh !important;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
     
     .contact-form {
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .contact-group, .contact-input {
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
     }
 
     .contact-group {
         display: block;
-        width: 80vw;
         margin: 0;
     }
 
@@ -92,5 +92,11 @@
     label {
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 700px) {
+    .contact-email {
+        display: none;
     }
 }

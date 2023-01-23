@@ -1,3 +1,4 @@
+/* PROJECT / ABOUT */
 .project, .about {
     flex-direction: row;
     text-align: center;
@@ -20,8 +21,171 @@
     max-width: 100vw !important;
 }
 
+/* PROJECT PAD */
+.projectPad{
+    min-width: 500px !important;
+    width: 500px !important;
+    height: 300px;
+    border-radius: 20px;
+    border: thin solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 20px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: grab;
+}
+
+.projectPad:hover, .projectPad:active, .projectPad:focus  {
+    border: 3px solid white;
+}
+
+
+/* PROJECT DETAIL */
+
+.bkmodal {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    height: 88vh;
+    width: 80vw;
+    background-color: #3b3b3ba8;
+}
+
+.modal {
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    position: absolute;
+    left: 15vw;
+    background-color: #3b3b3bf3;
+    text-align: center;
+    min-width: 536px;
+    width: 50vw;
+    height: 88vh;
+
+    border-left: 2px rgba(224, 224, 224, 0.8) solid;
+    border-right: 2px rgba(224, 224, 224, 0.8) solid;
+}
+
+.modal-title {
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+    border-bottom: 1px white solid;
+    margin-bottom: 25px;
+    font-size: 25px !important;
+    width: 500px;
+}
+
+.modal-image {
+    margin: 0 auto 0 auto;
+    height: 300px;
+    width: 500px;
+    border: 10px white solid;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.modal-desc {
+    border-top: 1px white solid;
+    margin: 0 auto 0 auto;
+    margin-top: 5px;
+    width: 500px;
+}
+
+.modal-close {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    left: 21.5vw;
+}
+
+.modal-close:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+.modal-url:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .projectPad {
+        min-width: 96vw !important;
+        width: 96vw !important;
+        height: 40vh;
+        margin: 5px;
+    }
+
+    .modal {
+        left: 0;
+        min-width: 100px;
+        width: 80vw;
+        border-left: none;
+        border-right: none;
+    }
+
+    .modal-title, .modal-image, .modal-desc, .modal-url {
+        width: 60vw;
+    }
+
+    .modal-title {
+        margin-top: 5px;
+        font-size: 20px !important;
+    }
+
+    .modal-image {
+        height: 40vh;
+    }
+
+    .modal-desc {
+        height: 30vh !important;
+        overflow: auto;
+    }
+
+    .modal-url {
+        display: none;
+    }
+
+    .modal-close {
+        position: relative;
+        left: 0;
+        margin: auto;
+    }
+}
+
 @media (max-height: 700px) {
-    .project, .about {
-        max-height: calc(88vh) !important;
+    .modal-image {
+        display: none;
+    }
+    
+    .modal-close {
+        position: relative;
+        left: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectPad {
+        height: 30vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .modal-desc {
+        display: none;
     }
 }

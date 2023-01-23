@@ -36,6 +36,7 @@ class App extends Component{
         {/* React Route */}
         <Routes className="route">
           <Route exact path="/CCPortfolio" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
 
           <Route path="about" element={<About aboutmeData={aboutmeData} />}/>
           

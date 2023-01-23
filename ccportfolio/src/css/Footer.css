@@ -53,6 +53,10 @@
 }
 
 @media (max-height: 700px) {
+    .nav {
+        bottom: 0 !important;
+    }
+
     .footer {
         display: none;
     }

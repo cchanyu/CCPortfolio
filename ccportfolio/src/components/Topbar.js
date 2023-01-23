@@ -31,27 +31,27 @@ class Topbar extends React.Component {
         /* find an efficient way to do this */
         switch (status) {
             case 5:
-                icon = <img className="battery icon" src={Battery1} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery1} alt="battery" />
                 break;
         
             case 4:
-                icon = <img className="battery icon" src={Battery2} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery2} alt="battery" />
                 break;
         
             case 3:
-                icon = <img className="battery icon" src={Battery3} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery3} alt="battery" />
                 break;
 
             case 2:
-                icon = <img className="battery icon" src={Battery4} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery4} alt="battery" />
                 break;
 
             case 1:
-                icon = <img className="battery icon" src={Battery5} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery5} alt="battery" />
                 break;
         
             default:
-                icon = <img className="battery icon" src={Battery1} alt="battery" />
+                icon = <img className="topbar-icon battery icon" src={Battery1} alt="battery" />
                 break;
         }
 
@@ -59,14 +59,14 @@ class Topbar extends React.Component {
             <div className="topbar">
                 <div className="topbar-container">
                     <div className="topbar-left">
-                        <img className="topbar-user icon" src={UserIcon} alt="topbar-user" />
+                        <img className="topbar-icon topbar-user icon" src={UserIcon} alt="topbar-user" />
                         <div className="topbar-text text">Hi, Guest</div>
                     </div>
                     <div className="topbar-right">
                         <div className="topbar-clock">
                             {new Date().toLocaleString("en-US", {hour: '2-digit', hour12: true, minute: '2-digit', timeZone: "America/New_York"})}
                         </div>
-                        <img className="topbar-wifi icon" src={WifiIcon} alt="topbar-wifi" />
+                        <img className="topbar-icon topbar-wifi icon" src={WifiIcon} alt="topbar-wifi" />
                         {icon}
                     </div>
                 </div>

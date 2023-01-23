@@ -6,6 +6,7 @@
     text-align: center;
     width: 80vw;
     height: 12vh;
+    z-index: 13;
 }
 
 .topbar-container {
@@ -14,7 +15,9 @@
     align-items: center;
     margin: 15px;
     padding: 10px;
+    height: 10vh;
     border-bottom: white 3px solid;
+    background-color: #3b3b3b;
 }
 
 .topbar-right,
@@ -50,7 +53,13 @@
 }
 
 @media (max-height: 700px) {
-    .navbar-container {
+    .topbar-container {
         margin: 0;
+    }
+}
+
+@media (max-height: 500px) {
+    .topbar-icon{
+        display: none;
     }
 }

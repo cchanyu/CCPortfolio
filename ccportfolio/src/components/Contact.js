@@ -39,7 +39,7 @@ class Contact extends React.Component {
                     <input type="text" className="contact-input" value={name} onChange={onNameChange.bind(this)} />
                 </div>
                 <div className="contact-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <label htmlFor="exampleInputEmail1">Email</label>
                     <input type="email" className="contact-input" value={email} onChange={onEmailChange.bind(this)} />
                 </div>
                 <div className="contact-group">
