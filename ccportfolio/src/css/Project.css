@@ -1,17 +1,17 @@
-.project {
+.project, .about {
     flex-direction: row;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.tiles {
+.project-tiles, .about-tiles {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.container {
+.project-container, .about-container {
     width: 100vw !important;
     overflow: hidden !important;
     overflow-x: scroll !important;
@@ -21,7 +21,7 @@
 }
 
 @media (max-height: 700px) {
-    .project {
-        max-height: 68vh !important;
+    .project, .about {
+        max-height: calc(88vh) !important;
     }
 }

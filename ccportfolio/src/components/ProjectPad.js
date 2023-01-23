@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/ProjectPad.css"
+import "../css/ProjectPad.css";
 import ProjectDetail from './ProjectDetail';
 
 class ProjectPad extends React.Component {

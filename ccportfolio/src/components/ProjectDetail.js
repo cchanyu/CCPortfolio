@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import "../css/ProjectDetail.css"
-import Times from '../icon/times-circle-solid.svg';
+import "../css/ProjectDetail.css";
+import TimesIcon from '../icon/times-circle-solid.svg';
 
 const ProjectDetail = (props) => {
     const { content, toggle } = props;
@@ -12,13 +12,13 @@ const ProjectDetail = (props) => {
     return(
         <div className="bkmodal" onClick={handleClick}>
             <div className="modal" onClick={handleClick}>
-                <div className="modal--title text">{content.name}</div>
-                <img className="modal--image" src={content.image} alt="content" />
+                <div className="modal-title text">{content.name}</div>
+                <img className="modal-image" src={content.image} alt="modal-image" />
                 <div className={URLCSS} onClick={() => toURL(content.url)}>{content.url}</div>
-                <div className="modal--desc text">{content.description}</div>
-                <div className="modal--close">
-                    <img className="times icon2" src={Times} alt="times" onClick={handleClick} />
-                    <div className="text">Close</div>
+                <div className="modal-desc text">{content.description}</div>
+                <div className="modal-close">
+                    <img className="model-times icon2" src={TimesIcon} alt="model-times" onClick={handleClick} />
+                    <div className="model-text text">Close</div>
                 </div>
             </div>
         </div>

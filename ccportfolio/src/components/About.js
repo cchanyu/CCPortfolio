@@ -2,9 +2,9 @@ import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 import ProjectPad from './ProjectPad';
 import ScrollContainer from "react-indiana-drag-scroll";
-import '../css/AboutMe.css'
+import '../css/About.css';
 
-const AboutMe = ({ aboutmeData }) => {
+const About = ({ aboutmeData }) => {
     const scrollRef = createRef();
     const clickHandler = () => {};
     const enableKeyboardCursorToScroll = () => {
@@ -14,10 +14,10 @@ const AboutMe = ({ aboutmeData }) => {
     };
 
     return(
-        <div className="project">
-            <ScrollContainer className="container">
+        <div className="about">
+            <ScrollContainer className="about-container">
                 <section
-                    className="tiles"
+                    className="about-tiles"
                     onFocus={enableKeyboardCursorToScroll}
                     ref={scrollRef}
                 >
@@ -29,7 +29,7 @@ const AboutMe = ({ aboutmeData }) => {
                                     content={aboutme}
                                     onClick={clickHandler}
                                 />
-                                <div className="data--title text">{aboutme.name}</div>
+                                <div className="about-title text">{aboutme.name}</div>
                             </div>
                         )
                     })}
@@ -39,8 +39,8 @@ const AboutMe = ({ aboutmeData }) => {
     )
 }
 
-AboutMe.propTypes = {
+About.propTypes = {
     aboutmeData: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
-export default AboutMe;
+export default About;

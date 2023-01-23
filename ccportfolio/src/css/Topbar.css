@@ -1,4 +1,4 @@
-.navbar {
+.topbar {
     position: absolute;
     background-color: #3b3b3b;
     top: 0;
@@ -8,7 +8,7 @@
     height: 12vh;
 }
 
-.navbar--inside {
+.topbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,12 +17,12 @@
     border-bottom: white 3px solid;
 }
 
-.navbar--inside--right,
-.navbar--inside--left {
+.topbar-right,
+.topbar-left {
     display: flex;
 }
 
-.icon, .clock {
+.topbar-icon, .topbar-clock {
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -30,13 +30,13 @@
     color: white;
 }
 
-.clock {
+.topbar-clock {
     font-weight: bold;
     font-size: 18px;
     width: 110px;
 }
 
-.user {
+.topbar-user {
     padding: 5px !important;
     margin-top: 5px;
     border: 3px solid white;
@@ -44,13 +44,13 @@
 }
 
 @media (max-width: 600px) {
-    .mtxt {
+    .topbar-text {
         display: none;
     }
 }
 
 @media (max-height: 700px) {
-    .navbar--inside {
+    .navbar-container {
         margin: 0;
     }
 }
