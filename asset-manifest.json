@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CCPortfolio/static/css/main.2945ddaf.chunk.css",
+    "main.css": "/CCPortfolio/static/css/main.2ce9ae22.chunk.css",
     "main.js": "/CCPortfolio/static/js/main.7dd8810d.chunk.js",
     "main.js.map": "/CCPortfolio/static/js/main.7dd8810d.chunk.js.map",
     "runtime-main.js": "/CCPortfolio/static/js/runtime-main.87a5b6b1.js",
@@ -16,7 +16,7 @@
     "static/js/6.a63f8d89.chunk.js": "/CCPortfolio/static/js/6.a63f8d89.chunk.js",
     "static/js/6.a63f8d89.chunk.js.map": "/CCPortfolio/static/js/6.a63f8d89.chunk.js.map",
     "index.html": "/CCPortfolio/index.html",
-    "static/css/main.2945ddaf.chunk.css.map": "/CCPortfolio/static/css/main.2945ddaf.chunk.css.map",
+    "static/css/main.2ce9ae22.chunk.css.map": "/CCPortfolio/static/css/main.2ce9ae22.chunk.css.map",
     "static/js/2.f45896e6.chunk.js.LICENSE.txt": "/CCPortfolio/static/js/2.f45896e6.chunk.js.LICENSE.txt",
     "static/js/5.0bbc208f.chunk.js.LICENSE.txt": "/CCPortfolio/static/js/5.0bbc208f.chunk.js.LICENSE.txt",
     "static/media/battery-empty-solid.1d2a5373.svg": "/CCPortfolio/static/media/battery-empty-solid.1d2a5373.svg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.87a5b6b1.js",
     "static/js/2.f45896e6.chunk.js",
-    "static/css/main.2945ddaf.chunk.css",
+    "static/css/main.2ce9ae22.chunk.css",
     "static/js/main.7dd8810d.chunk.js"
   ]
 }
