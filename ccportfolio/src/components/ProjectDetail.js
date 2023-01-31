@@ -7,7 +7,7 @@ const ProjectDetail = (props) => {
     const { content, toggle } = props;
     const handleClick = () => { toggle() };
     const toURL = (props) => { window.open(props) }
-    let URLCSS = (typeof content.url === 'string') ? "modal--url text" : "";
+    let URLCSS = (typeof content.url === 'string') ? "modal-url text" : "";
     
     return(
         <div className="bkmodal" onClick={handleClick}>

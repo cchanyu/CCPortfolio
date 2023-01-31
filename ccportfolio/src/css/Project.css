@@ -129,10 +129,10 @@
         margin: 5px;
     }
 
-    .modal {
+    .modal, .bkmodal {
         left: 0;
         min-width: 100px;
-        width: 80vw;
+        width: 100vw;
         border-left: none;
         border-right: none;
     }
