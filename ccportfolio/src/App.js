@@ -3,7 +3,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import projectData from "./server/projects.json";
 import aboutmeData from "./server/aboutme.json";
 
-import Home from './components/Home.js';
+import Home from './components/Home.jsx';
 import About from './components/About.js';
 import Project from './components/Project.js';
 import Contact from './components/Contact.js';
