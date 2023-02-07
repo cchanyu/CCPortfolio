@@ -39,6 +39,10 @@
     width: 110px;
 }
 
+.topbar-navlink {
+    transform: scale(1.0) !important;
+}
+
 .topbar-user {
     padding: 5px !important;
     margin-top: 5px;

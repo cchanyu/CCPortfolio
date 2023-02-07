@@ -9,6 +9,7 @@ import Project from './components/Project.js';
 import Contact from './components/Contact.js';
 import Topbar from './components/Topbar.js';
 import Footer from './components/Footer.js';
+import Login from "./components/Login";
 
 import HomeIcon from './icon/home-solid.svg';
 import AboutIcon from './icon/id-card-solid.svg';
@@ -21,28 +22,40 @@ class App extends Component{
     super(props);
     this.state = {
       projectData: projectData.projects,
-      aboutmeData: aboutmeData.aboutme
+      aboutmeData: aboutmeData.aboutme,
+      isLogged: false
     }
+    this.checkLogged = this.checkLogged.bind(this);
+  }
+
+  checkLogged() {
+    <>
+      { this.isLogged ? 
+      this.setState({ isLogged: false }) : 
+      this.setState({ isLogged: true })}
+    </>
   }
 
   render(){
-    const { projectData, aboutmeData } = this.state;
+    const { projectData, aboutmeData, isLogged } = this.state;
+    const { checkLogged } = this;
 
     return (
       <div className="App">
-        <Topbar className="top" />
+        <Topbar className="top" isLogged={isLogged} />
         <div className="top-invis" />
 
         {/* React Route */}
         <Routes className="route">
           <Route exact path="/CCPortfolio" element={<Home />}/>
+
           <Route path="/" element={<Home />}/>
 
           <Route path="about" element={<About aboutmeData={aboutmeData} />}/>
           
           <Route path="project" element={<Project projectData={projectData} />}/>
 
-          <Route path="contact" element={<Contact />}/>
+          <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
         </Routes>
 
         {/* Navigation */}
