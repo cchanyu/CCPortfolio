@@ -1,4 +1,5 @@
 import React from 'react';
+import { firestore } from '../firebase/firebase.config';
 import '../css/Contact.css';
 
 class Contact extends React.Component {
@@ -15,13 +16,31 @@ class Contact extends React.Component {
     onEmailChange(event) { this.setState({email: event.target.value}) }
     onMessageChange(event) { this.setState({message: event.target.value}) }
     handleSubmit(event) {
-        const { name, email, message} = this.state;
+        const { name, email, message } = this.state;
+        this.postData();
         event.preventDefault();
         console.log("Message sent: ", name, email, message)
         this.setState({
             name: '',
             email: '',
             message: ''
+        })
+    }
+    postData() {
+        const { name, email, message } = this.state;
+        const senderid = localStorage.getItem("email");
+        const time = Date.now()
+        firestore.collection("contact").add({
+          Name: name,
+          Email: email,
+          Message: message,
+          SenderID: senderid,
+          PostedOn: new Intl.DateTimeFormat('en-US', {
+          year: 'numeric', 
+          month: 'long', 
+          day: '2-digit', 
+          hour: '2-digit',
+          minute: '2-digit'}).format(time),
         })
     }
 
