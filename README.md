@@ -5,11 +5,7 @@
 
 #### Need to work on:
 
-- Hook up the backend
-- Mobile css adjustments
-- 3D interactive sandbox
 - Login form
-- Google OAuth
 
 #### References:
 
