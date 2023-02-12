@@ -111,3 +111,14 @@
     display: block;
   }
 }
+
+.project, .about, .home, .contact {
+  animation: showup 7s ease 1;
+}
+
+@keyframes showup {
+  0% { opacity:0; }
+  20% { opacity:1; }
+  80% { opacity:1; }
+  100% { opacity:1; }
+}
