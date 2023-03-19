@@ -36,7 +36,7 @@ class Topbar extends React.Component {
             <div className="topbar">
                 <div className="topbar-container">
                     <div className="topbar-left">
-                        <NavLink className="topbar-navlink" to="/contact">
+                        <NavLink className="topbar-navlink" to="/login">
                             <img className="topbar-icon topbar-user icon" src={UserIcon} alt="topbar-user" />
                         </NavLink>
                         <div className="topbar-text text">{ isLogged ? userGreet : guestGreet }</div>

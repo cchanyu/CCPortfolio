@@ -56,6 +56,8 @@ class App extends Component{
           <Route path="project" element={<Project projectData={projectData} />}/>
 
           <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+
+          <Route path="login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
         </Routes>
 
         {/* Navigation */}

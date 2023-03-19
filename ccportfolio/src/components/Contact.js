@@ -65,7 +65,7 @@ class Contact extends React.Component {
                     <label htmlFor="message">Message</label>
                     <textarea className="contact-input" rows="5" value={message} onChange={onMessageChange.bind(this)} />
                 </div>
-                <button type="submit" className="contact-button" onClick={handleSubmit.bind(this)}>Submit</button>
+                <button type="submit" className="contact--button" onClick={handleSubmit.bind(this)}>Submit</button>
                 </form>
             </div>
         )
