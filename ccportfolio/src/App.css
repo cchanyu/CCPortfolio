@@ -116,9 +116,9 @@ body {
   }
 }
 
-.project, .about, .home, .contact {
+/* .project, .about, .home, .contact {
   animation: showup 7s ease 1;
-}
+} */
 
 @keyframes showup {
   0% { opacity:0; }
