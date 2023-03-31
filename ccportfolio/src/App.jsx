@@ -47,37 +47,37 @@ class App extends Component{
 
         {/* React Route */}
         <Routes className="route">
-          <Route exact path="/CCPortfolio" element={<Home />}/>
+          <Route exact path="/CCPortfolio/home" element={<Home />}/>
 
-          <Route path="/" element={<Home />}/>
+          <Route path="/CCPortfolio" element={<Home />}/>
 
-          <Route path="about" element={<About aboutmeData={aboutmeData} />}/>
+          <Route path="CCPortfolio/about" element={<About aboutmeData={aboutmeData} />}/>
           
-          <Route path="project" element={<Project projectData={projectData} />}/>
+          <Route path="CCPortfolio/project" element={<Project projectData={projectData} />}/>
 
-          <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+          <Route path="CCPortfolio/contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
 
-          <Route path="login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+          <Route path="CCPortfolio/login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
         </Routes>
 
         {/* Navigation */}
         <nav className="nav">
-          <NavLink className="nav-link" exact to="/CCPortfolio" activeClassName="active">
+          <NavLink className="nav-link" exact to="/CCPortfolio/home" activeClassName="active">
             <img className="nav-icon icon" src={HomeIcon} alt="home" />
             <div className="nav-text">Home</div>
           </NavLink>
 
-          <NavLink className="nav-link" to="/about" activeClassName="active">
+          <NavLink className="nav-link" to="/CCPortfolio/about" activeClassName="active">
             <img className="nav-icon icon" src={AboutIcon} alt="about" />
             <div className="nav-text">About</div>
           </NavLink>
 
-          <NavLink className="nav-link" to="/project" activeClassName="active">
+          <NavLink className="nav-link" to="/CCPortfolio/project" activeClassName="active">
             <img className="nav-icon icon" src={ProjectIcon} alt="project" />
             <div className="nav-text">Project</div>
           </NavLink>
 
-          <NavLink className="nav-link" to="/contact" activeClassName="active">
+          <NavLink className="nav-link" to="/CCPortfolio/contact" activeClassName="active">
             <img className="nav-icon icon" src={ContactIcon} alt="contact" />
             <div className="nav-text">Contact</div>
           </NavLink>

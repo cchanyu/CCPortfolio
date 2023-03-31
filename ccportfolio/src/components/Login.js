@@ -22,7 +22,7 @@ function handleSignout(props) {
     signOut(target)
     .then((result) => {
         props.checkLogged();
-        window.location = '/';
+        window.location = '/CCPortfolio/home';
         console.log("result: ", result);
     }).catch((error) => {
         console.log("error: ", error);
