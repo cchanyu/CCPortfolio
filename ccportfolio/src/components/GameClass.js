@@ -19,14 +19,6 @@ export class Sprite {
     }
   
     draw_character() {
-        // draws the character
-        // this.c.fillStyle = 'red'
-        // this.c.fillRect(
-        //   this.position.x,
-        //   this.position.y,
-        //   this.width,
-        //   this.height
-        // )
         this.c.drawImage(this.image, 
             this.framesCurrent * (this.image.width / this.framesMax), 0, this.image.width / this.framesMax, this.image.height,
             this.position.x - this.offset.x, this.position.y - this.offset.y, (this.image.width / this.framesMax) * this.scale, this.image.height * this.scale)
@@ -85,6 +77,14 @@ export class Fighter extends Sprite {
     }
   
     draw_character() {
+      // draws the character
+      // this.c.fillStyle = 'blue'
+      // this.c.fillRect(
+      //   this.position.x,
+      //   this.position.y,
+      //   this.width,
+      //   this.height
+      // )
       this.c.drawImage(this.image, 
           this.framesCurrent * (this.image.width / this.framesMax), 0, this.image.width / this.framesMax, this.image.height,
           this.position.x - this.offset.x, this.position.y - this.offset.y, (this.image.width / this.framesMax) * this.scale, this.image.height * this.scale)
@@ -131,9 +131,9 @@ export class Fighter extends Sprite {
       }
 
       // gravity function
-      if (this.position.y + this.height + this.velocity.y >= this.canvas.height - 77) {
+      if (this.position.y + this.height + this.velocity.y >= this.canvas.height - 40) {
         this.velocity.y = 0;
-        this.position.y = 349; // Adjust position to prevent jitter effect on jump
+        this.position.y = 390; // Adjust position to prevent jitter effect on jump
       } else {
         this.velocity.y += gravity;
       }

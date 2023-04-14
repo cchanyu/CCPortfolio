@@ -107,6 +107,10 @@ body {
     height: 88vh !important;
   }
 
+  .gamewrapper {
+    height: 78vh !important;
+  }
+
   .nav-icon {
     display: none;
   }

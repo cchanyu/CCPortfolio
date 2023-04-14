@@ -54,7 +54,7 @@ function GameScreen() {
             scale: 2.5,
             imageSrc: Player1_idle,
             framesMax: 8,
-            offset: { x: 180, y: 70 },
+            offset: { x: 185, y: 110 },
             sprites: {
                 idle: { imageSrc: Player1_idle, framesMax: 8 },
                 run: { imageSrc: Player1_run, framesMax: 8 },
@@ -64,7 +64,7 @@ function GameScreen() {
                 takeHit: { imageSrc: Player1_takehit, framesMax: 4 },
                 death: { imageSrc: Player1_death, framesMax: 6 }
             },
-            attackBox: { offset: { x: 60, y: 90 }, width: 140, height: 50 }
+            attackBox: { offset: { x: 50, y: 45 }, width: 140, height: 50 }
         })
         
         const enemy = new Fighter ({
@@ -74,7 +74,7 @@ function GameScreen() {
             scale: 2.5,
             imageSrc: Player2_idle,
             framesMax: 8,
-            offset: { x: 100, y: 70 },
+            offset: { x: 165, y: 110 },
             sprites: {
                 idle: { imageSrc: Player2_idle, framesMax: 8 },
                 run: { imageSrc: Player2_run, framesMax: 8 },
@@ -84,7 +84,7 @@ function GameScreen() {
                 takeHit: { imageSrc: Player2_takehit, framesMax: 4 },
                 death: { imageSrc: Player2_death, framesMax: 6 }
             },
-            attackBox: { offset: { x: -80, y: 90 }, width: 140, height: 50 }
+            attackBox: { offset: { x: -140, y: 45 }, width: 140, height: 50 }
         })
 
         function animate() {
