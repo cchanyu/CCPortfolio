@@ -4,7 +4,6 @@ import { isPlayerWithinBounds, rectangularCollision, determineWinner, timerId, d
 import gsap from 'gsap';
 
 import Background from '../IMG/background/background_layer.png';
-import Shop from '../IMG/decorations/shop_anim.png';
 
 import Player1_idle from '../IMG/player1/Idle.png';
 import Player1_run from '../IMG/player1/Run.png';
@@ -40,7 +39,6 @@ function GameScreen() {
         canvas.height = 576;
 
         const background = new Sprite ({ c: c, canvas: canvas, position: { x: 0, y: 0 }, scale: 1.067, imageSrc: Background })
-        const shop = new Sprite ({ c: c, canvas: canvas, position: { x: 600, y: 100 }, scale: 3, framesMax: 6, imageSrc: Shop })
 
         const player = new Fighter ({
             c: c, canvas: canvas,
@@ -49,17 +47,17 @@ function GameScreen() {
             scale: 2.5,
             imageSrc: Player1_idle,
             framesMax: 8,
-            offset: { x: 215, y: 155 },
+            offset: { x: 180, y: 70 },
             sprites: {
                 idle: { imageSrc: Player1_idle, framesMax: 8 },
                 run: { imageSrc: Player1_run, framesMax: 8 },
                 jump: { imageSrc: Player1_jump, framesMax: 2 },
                 fall: { imageSrc: Player1_fall, framesMax: 2 },
-                attack1: { imageSrc: Player1_attack1, framesMax: 6 },
+                attack1: { imageSrc: Player1_attack1, framesMax: 4 },
                 takeHit: { imageSrc: Player1_takehit, framesMax: 4 },
                 death: { imageSrc: Player1_death, framesMax: 6 }
             },
-            attackBox: { offset: { x: 60, y: 50 }, width: 200, height: 50 }
+            attackBox: { offset: { x: 60, y: 90 }, width: 140, height: 50 }
         })
         
         const enemy = new Fighter ({
@@ -68,18 +66,18 @@ function GameScreen() {
             velocity: { x: 0, y: 10 },
             scale: 2.5,
             imageSrc: Player2_idle,
-            framesMax: 4,
-            offset: { x: 215, y: 170 },
+            framesMax: 8,
+            offset: { x: 100, y: 70 },
             sprites: {
-                idle: { imageSrc: Player2_idle, framesMax: 4 },
+                idle: { imageSrc: Player2_idle, framesMax: 8 },
                 run: { imageSrc: Player2_run, framesMax: 8 },
                 jump: { imageSrc: Player2_jump, framesMax: 2 },
                 fall: { imageSrc: Player2_fall, framesMax: 2 },
                 attack1: { imageSrc: Player2_attack1, framesMax: 4 },
-                takeHit: { imageSrc: Player2_takehit, framesMax: 3 },
-                death: { imageSrc: Player2_death, framesMax: 7 }
+                takeHit: { imageSrc: Player2_takehit, framesMax: 4 },
+                death: { imageSrc: Player2_death, framesMax: 6 }
             },
-            attackBox: { offset: { x: -180, y: 50 }, width: 180, height: 50 }
+            attackBox: { offset: { x: -80, y: 90 }, width: 140, height: 50 }
         })
 
         function animate() {
@@ -89,7 +87,6 @@ function GameScreen() {
             c.fillRect(0,0, canvas.width, canvas.height)
             
             background.update()
-            shop.update()
         
             // light background filter 
             c.fillStyle = 'rgba(255, 255, 255, 0.08)'
@@ -146,7 +143,7 @@ function GameScreen() {
         
             // collision: player attacks, enemy gets hit
             if (rectangularCollision({ rectangle1: player, rectangle2: enemy}) &&
-                player.isAttacking && player.framesCurrent === 4) {
+                player.isAttacking && player.framesCurrent === 2) {
                     enemy.takeHit()
                     player.isAttacking = false
                     gsap.to('#enemyHP', {
@@ -155,7 +152,7 @@ function GameScreen() {
             }
         
             // if player misses 
-            if (player.isAttacking && player.framesCurrent === 4) {
+            if (player.isAttacking && player.framesCurrent === 2) {
                 player.isAttacking = false
             }
         

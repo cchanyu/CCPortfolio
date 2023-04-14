@@ -19,6 +19,14 @@ export class Sprite {
     }
   
     draw_character() {
+        // draws the character
+        // this.c.fillStyle = 'red'
+        // this.c.fillRect(
+        //   this.position.x,
+        //   this.position.y,
+        //   this.width,
+        //   this.height
+        // )
         this.c.drawImage(this.image, 
             this.framesCurrent * (this.image.width / this.framesMax), 0, this.image.width / this.framesMax, this.image.height,
             this.position.x - this.offset.x, this.position.y - this.offset.y, (this.image.width / this.framesMax) * this.scale, this.image.height * this.scale)
@@ -94,6 +102,15 @@ export class Fighter extends Sprite {
       // attack boxes
       this.attackBox.position.x = this.position.x + this.attackBox.offset.x
       this.attackBox.position.y = this.position.y + this.attackBox.offset.y
+
+      // draws the attack box
+      // this.c.fillStyle = 'red'
+      // this.c.fillRect(
+      //   this.attackBox.position.x,
+      //   this.attackBox.position.y,
+      //   this.attackBox.width,
+      //   this.attackBox.height
+      // )
 
       this.position.x += this.velocity.x;
       this.position.y += this.velocity.y;

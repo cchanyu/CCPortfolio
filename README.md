@@ -1,15 +1,7 @@
 ### Live Deployed Link:
 
 #### Link: https://cchanyu.github.io/CCPortfolio/
-#### Old Version: https://github.com/cchanyu/CCPortfolio/tree/a84bbd76c359648403f89d5b492108832bd0687c
 
-#### Need to work on:
-
-- Login form
-
-#### References:
-
-- Json: https://github.com/cchanyu/CCPortfolio
-- Indiana-Drag-Scroll: https://www.npmjs.com/package/react-indiana-drag-scroll
-- Tic-Tac-Toe: https://reactjs.org/tutorial/tutorial.html
-- Contact Form: https://mailtrap.io/blog/react-contact-form/
+#### Game1 2D2P Fighting: Character Asset - LuizMelo (Itch.io)
+#### Game1 2D2P Fighting: Background Asset - edermunizz (Itch.io)
+#### Game1 2D2P Fighting: Char, BG recolor - cchanyu (github)
