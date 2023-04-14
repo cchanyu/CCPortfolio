@@ -86,7 +86,7 @@ body {
   display: block;
 }
 
-.home, .contact, .project, .about {
+.home, .contact, .project, .about, .gamewrapper {
   display: flex;
   position: absolute;
   left: 10vw;
@@ -96,7 +96,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .project, .about, .home, .contact, .nav, .footer, .topbar {
+  .project, .about, .home, .contact, .nav, .footer, .topbar, .gamewrapper {
     width: 100vw !important;
     left: 0;
   }

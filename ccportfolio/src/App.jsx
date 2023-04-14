@@ -10,11 +10,13 @@ import Contact from './components/Contact.js';
 import Topbar from './components/Topbar.js';
 import Footer from './components/Footer.js';
 import Login from "./components/Login";
+import GameWrapper from "./components/GameWrapper";
 
 import HomeIcon from './icon/home-solid.svg';
 import AboutIcon from './icon/id-card-solid.svg';
 import ProjectIcon from './icon/list-alt-solid.svg';
 import ContactIcon from './icon/edit-solid.svg';
+import GameIcon from './icon/gamepad-solid.svg';
 import './App.css'
 
 class App extends Component{
@@ -51,6 +53,8 @@ class App extends Component{
 
           <Route path="/CCPortfolio" element={<Home />}/>
 
+          <Route path="CCPortfolio/game1" element={<GameWrapper />}/>
+
           <Route path="CCPortfolio/about" element={<About aboutmeData={aboutmeData} />}/>
           
           <Route path="CCPortfolio/project" element={<Project projectData={projectData} />}/>
@@ -62,9 +66,14 @@ class App extends Component{
 
         {/* Navigation */}
         <nav className="nav">
-          <NavLink className="nav-link" exact to="/CCPortfolio/home" activeClassName="active">
+          <NavLink className="nav-link" exact="true" to="/CCPortfolio/home" activeClassName="active">
             <img className="nav-icon icon" src={HomeIcon} alt="home" />
             <div className="nav-text">Home</div>
+          </NavLink>
+
+          <NavLink className="nav-link" to="/CCPortfolio/game1" activeClassName="active">
+            <img className="nav-icon icon" src={GameIcon} alt="game" />
+            <div className="nav-text">Game</div>
           </NavLink>
 
           <NavLink className="nav-link" to="/CCPortfolio/about" activeClassName="active">
