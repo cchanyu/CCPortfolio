@@ -37,5 +37,8 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
 }

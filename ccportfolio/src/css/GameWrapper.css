@@ -103,7 +103,7 @@
     color: red; background: none; border: none; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 2px black; font-family: 'Roboto', sans-serif;
   }
   
-  .index-winner-button:hover {
+  .index-winner-button:hover, .index-winner-button:active, .index-winner-button::after {
     cursor: pointer;
     color: white; 
     text-shadow: 2px 2px 2px black;

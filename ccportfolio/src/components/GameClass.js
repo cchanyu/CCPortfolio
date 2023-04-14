@@ -192,6 +192,8 @@ export class Fighter extends Sprite {
             this.framesCurrent = 0
           }
           break;
+        default:
+          break;
       }
     }
 }

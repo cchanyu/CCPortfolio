@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Sprite, Fighter } from './GameClass';
 import { isPlayerWithinBounds, rectangularCollision, determineWinner, timerId, decreaseTimer } from "./GameFunction";
 import gsap from 'gsap';
@@ -24,8 +24,8 @@ import Player2_death from '../IMG/player2/Death.png';
 
 function GameScreen() {
     const canvasRef = useRef(null);
-    const [context, setContext] = useState(null);
-    let playerBoundary, enemyBoundary;
+    const playerBoundaryRef = useRef(null);
+    const enemyBoundaryRef = useRef(null);
     const keys = {
         a: { pressed: false },
         d: { pressed: false },
@@ -46,7 +46,6 @@ function GameScreen() {
             c: c, canvas: canvas,
             position: { x: 200, y: 50 },
             velocity: { x: 0, y: 10 },
-            offset: { x: 0, y: 0 },
             scale: 2.5,
             imageSrc: Player1_idle,
             framesMax: 8,
@@ -67,7 +66,6 @@ function GameScreen() {
             c: c, canvas: canvas,
             position: { x: 800, y: 50 },
             velocity: { x: 0, y: 10 },
-            offset: { x: -50, y: 0 },
             scale: 2.5,
             imageSrc: Player2_idle,
             framesMax: 4,
@@ -97,8 +95,8 @@ function GameScreen() {
             c.fillStyle = 'rgba(255, 255, 255, 0.08)'
             c.fillRect(0, 0, canvas.width, canvas.height)
         
-            playerBoundary = isPlayerWithinBounds(player, canvas.width, canvas.height)
-            enemyBoundary = isPlayerWithinBounds(enemy, canvas.width, canvas.height)
+            playerBoundaryRef.current = isPlayerWithinBounds(player, canvas.width, canvas.height)
+            enemyBoundaryRef.current = isPlayerWithinBounds(enemy, canvas.width, canvas.height)
         
             // player movement
             player.update()
@@ -112,7 +110,7 @@ function GameScreen() {
             } else {
                 player.switchSprite('idle')
             }
-            if (!playerBoundary) {
+            if (!playerBoundaryRef.current) {
                 console.log("player1 out of bound", player.position.x, player.position.y)
             }
         
@@ -128,7 +126,7 @@ function GameScreen() {
             } else {
                 enemy.switchSprite('idle')
             }
-            if (!enemyBoundary) {
+            if (!enemyBoundaryRef.current) {
                 console.log("player2 out of bound", enemy.position.x, enemy.position.y)
             }
         
@@ -183,7 +181,6 @@ function GameScreen() {
         }
 
         canvasRef.current = canvas;
-        setContext(c);
         decreaseTimer();
         animate();
 
@@ -204,7 +201,9 @@ function GameScreen() {
                         break
                     case 's':
                         player.attack()
-                        break        
+                        break
+                    default:
+                        break;
                 }
             }
         
@@ -225,6 +224,8 @@ function GameScreen() {
                     case 'ArrowDown':
                         enemy.attack()
                         break
+                    default:
+                        break;
                 }
             }
         })
@@ -238,6 +239,8 @@ function GameScreen() {
                 case 'a':
                     keys.a.pressed = false
                     break
+                default:
+                    break;
             }
         
             // enemy case
@@ -248,9 +251,15 @@ function GameScreen() {
                 case 'ArrowLeft':
                     keys.ArrowLeft.pressed = false
                     break
+                default:
+                    break;
             }
         })
-    }, []);
+
+        return () => {
+            clearTimeout(timerId);
+        };
+    }, [keys.ArrowLeft, keys.ArrowRight, keys.a, keys.d]);
 
     return (
         <div className="gamescreen">
