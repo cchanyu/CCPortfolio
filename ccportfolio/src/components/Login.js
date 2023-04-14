@@ -36,7 +36,7 @@ export default function Login(props) {
             <button type="submit" className="contact-button" onClick={() => handleSignout(props)}>Sign out</button> : 
             <div className='container'>
                 <div className='contact--text'>Please select a sign-in method:</div>
-                <button type="submit" className="contact-button" onClick={() => handleSignin(props)}>
+                <button type="submit" className="login-button" onClick={() => handleSignin(props)}>
                     <img className="contact--icon" src={GoogleIcon} alt="." />    
                     <div className='contact--text'>Sign in with Google</div>
                 </button>

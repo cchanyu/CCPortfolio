@@ -31,10 +31,17 @@ function GameScreen() {
         ArrowRight: { pressed: false },
         ArrowLeft: { pressed: false },
     }
+    if (document.querySelector('#displayWinner')) {
+        // Check if the element exists before accessing its style property
+        if (document.querySelector('#displayWinner').style.display === 'flex') {
+            document.querySelector('#displayWinner').style.display = 'none';
+        }
+    }
 
     useEffect(() => {
         const canvas = canvasRef.current;
         const c = canvas.getContext("2d");
+        let animationId;
         canvas.width = 1024;
         canvas.height = 576;
 
@@ -42,7 +49,7 @@ function GameScreen() {
 
         const player = new Fighter ({
             c: c, canvas: canvas,
-            position: { x: 200, y: 50 },
+            position: { x: 100, y: 50 },
             velocity: { x: 0, y: 10 },
             scale: 2.5,
             imageSrc: Player1_idle,
@@ -81,7 +88,7 @@ function GameScreen() {
         })
 
         function animate() {
-            window.requestAnimationFrame(animate); // infinite update
+            animationId = window.requestAnimationFrame(animate); // infinite update
             
             c.fillStyle = "black";
             c.fillRect(0,0, canvas.width, canvas.height)
@@ -178,7 +185,7 @@ function GameScreen() {
         }
 
         canvasRef.current = canvas;
-        decreaseTimer();
+        decreaseTimer(player, enemy);
         animate();
 
         window.addEventListener('keydown', (event) => {
@@ -254,6 +261,8 @@ function GameScreen() {
         })
 
         return () => {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+            window.cancelAnimationFrame(animationId);
             clearTimeout(timerId);
         };
     }, [keys.ArrowLeft, keys.ArrowRight, keys.a, keys.d]);

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../css/Home.css';
 import Spline from '@splinetool/react-spline';
 
 const Home = () => {
-    return(
-        <div className="home">
-            <Spline scene="https://prod.spline.design/iSTpEEfVMef0QNyF/scene.splinecode" />
-        </div>
-    )
+  useEffect(() => {
+    return () => {
+      const splineElement = document.querySelector('.home .SplineSceneContainer');
+      if (splineElement) {
+        splineElement.innerHTML = '';
+      }
+    };
+  }, []);
+
+  return (
+    <div className="home">
+      <Spline scene="https://prod.spline.design/iSTpEEfVMef0QNyF/scene.splinecode" />
+    </div>
+  );
 }
 
 export default Home;

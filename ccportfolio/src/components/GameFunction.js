@@ -53,9 +53,9 @@ export function determineWinner({ player, enemy, timerId }) {
 //     animate();
 // }
 
-export let timer = 60
+let timer = 60;
 export let timerId;
-export function decreaseTimer() {
+export function decreaseTimer(player, enemy) {
     if (timer > 0) { 
         timerId = setTimeout(decreaseTimer, 1000)
         timer-- 
@@ -63,6 +63,6 @@ export function decreaseTimer() {
     }
 
     if (timer === 0) {
-        // determineWinner({ player, enemy, timerId })
+        determineWinner({ player, enemy, timerId })
     }
 }

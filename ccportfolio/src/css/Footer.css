@@ -40,6 +40,10 @@
     .footer-gamepad:hover, .icon:hover {
         transform: scale(1) !important;
     }
+
+    .footer-inside {
+        padding: 0;
+    }
 }
 
 @media (max-width: 600px) {
