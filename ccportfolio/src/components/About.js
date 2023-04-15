@@ -1,32 +1,24 @@
-import React, { createRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useRef, useState } from 'react';
 import ProjectPad from './ProjectPad';
+import AboutmeData from "../server/aboutme.json";
 import ScrollContainer from "react-indiana-drag-scroll";
 
-const About = ({ aboutmeData }) => {
-    const scrollRef = createRef();
-    const clickHandler = () => {};
-    const enableKeyboardCursorToScroll = () => {
-        if (this.scrollRef.current) {
-            this.scrollRef.current.focus();
-        }
-    };
+const About = () => {
+    const [aboutmeData] = useState(AboutmeData.aboutme);
+    const scrollRef = useRef(null);
 
     return(
         <div className="about">
             <ScrollContainer className="about-container">
                 <section
                     className="about-tiles"
-                    onFocus={enableKeyboardCursorToScroll}
-                    ref={scrollRef}
-                >
+                    ref={scrollRef}>
                     {aboutmeData.map((aboutme) => {
                         return (
                             <div key={aboutme.id}>
                                 <ProjectPad
                                     key={aboutme.id}
                                     content={aboutme}
-                                    onClick={clickHandler}
                                 />
                                 <div className="about-title text">{aboutme.name}</div>
                             </div>
@@ -36,10 +28,6 @@ const About = ({ aboutmeData }) => {
             </ScrollContainer>
         </div>
     )
-}
-
-About.propTypes = {
-    aboutmeData: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default About;

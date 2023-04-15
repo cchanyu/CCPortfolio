@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Routes, Route, NavLink } from 'react-router-dom';
-import ProjectData from "./server/projects.json";
-import AboutmeData from "./server/aboutme.json";
 
 import Home from './components/Home.jsx';
 import About from './components/About.js';
@@ -20,34 +18,22 @@ import GameIcon from './icon/gamepad-solid.svg';
 import './App.css'
 
 const App = () => {
-  const [projectData] = useState(ProjectData.projects);
-  const [aboutmeData] = useState(AboutmeData.aboutme);
-  const [isLogged, setIsLogged] = useState(false);
-
-  const checkLogged = () => {
-    setIsLogged(!isLogged);
-  }
+  const [ isLogged ] = useState(JSON.parse(localStorage.getItem('isLogged')));
 
   return (
     <div className="App">
-      <Topbar className="top" isLogged={isLogged} />
+      <Topbar />
       <div className="top-invis" />
 
       {/* React Route */}
       <Routes className="route">
         <Route exact path="/CCPortfolio/home" element={<Home />}/>
-
         <Route path="/CCPortfolio" element={<Home />}/>
-
         <Route path="CCPortfolio/game1" element={<GameWrapper />}/>
-
-        <Route path="CCPortfolio/about" element={<About aboutmeData={aboutmeData} />}/>
-
-        <Route path="CCPortfolio/project" element={<Project projectData={projectData} />}/>
-
-        <Route path="CCPortfolio/contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
-
-        <Route path="CCPortfolio/login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+        <Route path="CCPortfolio/about" element={<About />}/>
+        <Route path="CCPortfolio/project" element={<Project />}/>
+        <Route path="CCPortfolio/contact" element={isLogged ? <Contact /> : <Login />}/>
+        <Route path="CCPortfolio/login" element={<Login />}/>
       </Routes>
 
       {/* Navigation */}
