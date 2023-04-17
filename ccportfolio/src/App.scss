@@ -1,3 +1,31 @@
+$bgColor: #3b3b3b;
+$backColor: #202020;
+$textColor: whitesmoke;
+
+@mixin mobile-height {
+  @media screen and (max-height: 700px) {
+      @content;
+  }
+}
+
+@mixin mobile-width {
+  @media screen and (max-width: 600px) {
+      @content;
+  }
+}
+
+@mixin tablet-width {
+  @media screen and (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin default-centering() {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   overflow: hidden;
 }
@@ -8,8 +36,8 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  color: white;
-  background-color: #202020;
+  color: $textColor;
+  background-color: $backColor;
 }
 
 .top-invis {
@@ -30,12 +58,21 @@ body {
   bottom: 10vh;
   width: 80vw;
   z-index: 5;
-  background-color: #3b3b3b;
-}
+  background-color: $bgColor;
 
-.nav-link {
-  width: 75px;
-  z-index: 5;
+  &-link {
+    width: 75px;
+    z-index: 5;
+  }
+
+  &-text {
+    display: none;
+    margin: 0 12px 0 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: $textColor;
+  }
 }
 
 .text {
@@ -45,7 +82,7 @@ body {
   line-height: 50px;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: $textColor;
 }
 
 .icon, .icon2 {
@@ -55,7 +92,7 @@ body {
 }
 
 .icon {
-  border: 3px solid white;
+  border: 3px solid $textColor;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -66,24 +103,15 @@ body {
   display: block;
 }
 
-.nav-text {
-  display: none;
-  margin: 0 12px 0 12px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-}
-
 /* Active tag comes from NavRoute, whichever one is clicked has className: active */
 .active {
   z-index: 10;
   transform: scale(1.2);
-}
 
-.active > div {
-  z-index: 10;
-  display: block;
+  div {
+    z-index: 10;
+    display: block;
+  }
 }
 
 .home, .contact, .project, .about, .gamewrapper {
@@ -92,7 +120,7 @@ body {
   left: 10vw;
   height: 68vh; /* 100vh - 12vh topbar - 10vh footer - 10vh navbar */
   width: 80vw;
-  background-color: #3b3b3b;
+  background-color: $bgColor;
 }
 
 @media (max-width: 1024px) {
@@ -120,9 +148,9 @@ body {
   }
 }
 
-/* .project, .about, .home, .contact {
-  animation: showup 7s ease 1;
-} */
+// .project, .about, .home, .contact {
+//   animation: showup 3s ease 1;
+// } 
 
 @keyframes showup {
   0% { opacity:0; }

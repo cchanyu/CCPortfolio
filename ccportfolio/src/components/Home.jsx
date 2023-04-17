@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../css/Home.css';
+import '../css/Home.scss';
 import Spline from '@splinetool/react-spline';
 
 const Home = () => {

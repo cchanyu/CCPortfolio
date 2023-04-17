@@ -1,7 +1,7 @@
 import React from 'react';
 import TimesIcon from '../icon/times-circle-solid.svg';
 import GamePadIcon from '../icon/gamepad-solid.svg';
-import '../css/Footer.css';
+import '../css/Footer.scss';
 
 const Footer = () => {
     return(

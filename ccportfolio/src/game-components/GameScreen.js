@@ -3,23 +3,23 @@ import { Sprite, Fighter } from './GameClass';
 import { isPlayerWithinBounds, rectangularCollision, determineWinner, timerId, decreaseTimer } from "./GameFunction";
 import gsap from 'gsap';
 
-import Background from '../IMG/background/background_layer.png';
+import Background from '../contents/background/background_layer.png';
 
-import Player1_idle from '../IMG/player1/Idle.png';
-import Player1_run from '../IMG/player1/Run.png';
-import Player1_jump from '../IMG/player1/Jump.png';
-import Player1_fall from '../IMG/player1/Fall.png';
-import Player1_attack1 from '../IMG/player1/Attack1.png';
-import Player1_takehit from '../IMG/player1/Take Hit.png';
-import Player1_death from '../IMG/player1/Death.png';
+import Player1_idle from '../contents/player1/Idle.png';
+import Player1_run from '../contents/player1/Run.png';
+import Player1_jump from '../contents/player1/Jump.png';
+import Player1_fall from '../contents/player1/Fall.png';
+import Player1_attack1 from '../contents/player1/Attack1.png';
+import Player1_takehit from '../contents/player1/Take Hit.png';
+import Player1_death from '../contents/player1/Death.png';
 
-import Player2_idle from '../IMG/player2/Idle.png';
-import Player2_run from '../IMG/player2/Run.png';
-import Player2_jump from '../IMG/player2/Jump.png';
-import Player2_fall from '../IMG/player2/Fall.png';
-import Player2_attack1 from '../IMG/player2/Attack1.png';
-import Player2_takehit from '../IMG/player2/Take hit.png';
-import Player2_death from '../IMG/player2/Death.png';
+import Player2_idle from '../contents/player2/Idle.png';
+import Player2_run from '../contents/player2/Run.png';
+import Player2_jump from '../contents/player2/Jump.png';
+import Player2_fall from '../contents/player2/Fall.png';
+import Player2_attack1 from '../contents/player2/Attack1.png';
+import Player2_takehit from '../contents/player2/Take hit.png';
+import Player2_death from '../contents/player2/Death.png';
 
 function GameScreen() {
     const canvasRef = useRef(null);

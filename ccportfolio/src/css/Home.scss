@@ -1,11 +1,11 @@
+@import '../App.scss';
+
 .home {
     flex-direction: column;
     margin: 0 auto 0 auto;
     text-align: center;
-}
 
-@media (max-width: 1024px) {
-    .home {
+    @include tablet-width {
         margin: 0;
         width: 100vw;
         justify-content: center;

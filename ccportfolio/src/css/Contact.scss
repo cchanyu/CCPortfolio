@@ -1,3 +1,5 @@
+@import '../App.scss';
+
 .contact {
     flex-direction: column;
     text-align: center;
@@ -6,37 +8,38 @@
     justify-content: center;
     align-items: center;
     overflow: auto;
-}
 
-.contact-title {
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
+    &-title {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
 
-.contact-email {
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 50px;
-}
+    &-email {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
 
-.contact-group {
-    display: flex;
-    justify-content: space-between;
-    width: 40vw;
-    margin: 10px;
-    padding-bottom: 5px;
-}
+    &-group {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+        margin: 10px;
+        padding-bottom: 5px;
+    }
 
-.contact-input {
-    color: white;
-    height: auto;
-    width: 500px;
-}
+    &-input {
+        color: white;
+        height: auto;
+        width: 500px;
 
-.contact-input:active, .contact-input:focus {
-    color: white;
-    border: 1px solid white;
+        &:active, &:focus {
+            color: white;
+            border: 1px solid white;
+            outline: none;
+        }
+    }
 }
 
 .contact-button, .login-button {

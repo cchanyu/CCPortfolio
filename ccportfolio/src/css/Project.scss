@@ -1,24 +1,28 @@
+@import '../App.scss';
+$modalBkColor: #3b3b3ba8;
+$modalColor: #3b3b3bf3;
+
 /* PROJECT / ABOUT */
 .project, .about {
     flex-direction: row;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
 
-.project-tiles, .about-tiles {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+    &-tiles {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.project-container, .about-container {
-    width: 100vw !important;
-    overflow: hidden !important;
-    overflow-x: scroll !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 100vw !important;
+    &-container {
+        width: 100vw !important;
+        overflow: hidden !important;
+        overflow-x: scroll !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100vw !important;
+    }
 }
 
 /* PROJECT PAD */
@@ -27,7 +31,7 @@
     width: 500px !important;
     height: 300px;
     border-radius: 20px;
-    border: thin solid white;
+    border: thin solid $textColor;
 
     display: flex;
     align-items: center;
@@ -36,18 +40,17 @@
     margin: 20px;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
 
-    color: white;
+    color: $textColor;
     font-weight: bold;
     font-size: 24px;
     cursor: grab;
-}
 
-.projectPad:hover, .projectPad:active, .projectPad:focus  {
-    border: 3px solid white;
+    &:hover, &:active, &:focus {
+        border: 3px solid $textColor;
+    }
 }
 
 /* PROJECT DETAIL */
-
 .bkmodal {
     z-index: 20;
     position: absolute;
@@ -55,7 +58,7 @@
     left: 0vw;
     height: 88vh;
     width: 80vw;
-    background-color: #3b3b3ba8;
+    background-color: $modalBkColor;
 }
 
 .modal {
@@ -66,7 +69,7 @@
     text-align: center;
     position: absolute;
     left: 15vw;
-    background-color: #3b3b3bf3;
+    background-color: $modalColor;
     text-align: center;
     min-width: 536px;
     width: 50vw;
@@ -74,50 +77,52 @@
 
     border-left: 2px rgba(224, 224, 224, 0.8) solid;
     border-right: 2px rgba(224, 224, 224, 0.8) solid;
-}
 
-.modal-title {
-    margin: 0 auto 0 auto;
-    margin-top: 30px;
-    border-bottom: 1px white solid;
-    margin-bottom: 25px;
-    font-size: 25px !important;
-    width: 500px;
-}
+    &-title {
+        margin: 0 auto 0 auto;
+        margin-top: 30px;
+        border-bottom: 1px $textColor solid;
+        margin-bottom: 25px;
+        font-size: 25px !important;
+        width: 500px;
+    }
 
-.modal-image {
-    margin: 0 auto 0 auto;
-    height: 300px;
-    width: 500px;
-    border: 10px white solid;
-    border-radius: 10px;
+    &-image {
+        margin: 0 auto 0 auto;
+        height: 300px;
+        width: 500px;
+        border: 10px $textColor solid;
+        border-radius: 10px;
+    
+        margin-bottom: 15px;
+    }
 
-    margin-bottom: 15px;
-}
+    &-desc {
+        border-top: 1px $textColor solid;
+        margin: 0 auto 0 auto;
+        margin-top: 5px;
+        width: 500px;
+    }
 
-.modal-desc {
-    border-top: 1px white solid;
-    margin: 0 auto 0 auto;
-    margin-top: 5px;
-    width: 500px;
-}
+    &-close {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        left: 21.5vw;
 
-.modal-close {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
-    left: 21.5vw;
-}
+        &:hover {
+            transition: transform .2s;
+            transform: scale(1.2);
+        }
+    }
 
-.modal-close:hover {
-    transition: transform .2s;
-    transform: scale(1.2);
-}
-
-.modal-url:hover {
-    color: grey;
-    cursor: pointer;
+    &-url {
+        &:hover {
+            color: grey;
+            cursor: pointer;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

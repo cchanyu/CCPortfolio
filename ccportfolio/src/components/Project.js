@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import ProjectPad from './ProjectPad';
-import ProjectData from "../server/projects.json";
+import ProjectData from "../firebase/projects.json";
 import ScrollContainer from "react-indiana-drag-scroll";
-import '../css/Project.css';
+import '../css/Project.scss';
 
 const Project = () => {
   const scrollRef = useRef(null);
@@ -11,16 +11,11 @@ const Project = () => {
   return (
     <div className="project">
       <ScrollContainer className="project-container">
-        <section
-          className="project-tiles"
-          ref={scrollRef}>
+        <section className="project-tiles" ref={scrollRef}>
           {projectData.slice(0).reverse().map((project) => {
             return (
               <div key={project.id}>
-                <ProjectPad
-                  key={project.id}
-                  content={project}
-                />
+                <ProjectPad key={project.id} content={project} />
                 <div className="project-title text">{project.name} - {project.language}</div>
               </div>
             )

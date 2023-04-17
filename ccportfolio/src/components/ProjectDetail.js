@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import TimesIcon from '../icon/times-circle-solid.svg';
-import "../css/Project.css";
+import "../css/Project.scss";
 
 const ProjectDetail = (props) => {
     const { content, toggle } = props;

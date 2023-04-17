@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProjectDetail from './ProjectDetail';
-import "../css/Project.css";
+import "../css/Project.scss";
 
 const ProjectPad = ({ content }) => {
     const [detail, setDetail] = useState(false);

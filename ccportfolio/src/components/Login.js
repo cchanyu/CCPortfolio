@@ -8,8 +8,7 @@ export default function Login() {
 
     function handleSignin() {
         const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider)
-        .then((result) => {
+        signInWithPopup(auth, provider).then((result) => {
             const email = result.user.email;
             const name = result.user.displayName;
             localStorage.setItem("isLogged", true);
@@ -23,8 +22,7 @@ export default function Login() {
     
     function handleSignout() {
         const target = getAuth();
-        signOut(target)
-        .then((result) => {
+        signOut(target).then((result) => {
             localStorage.setItem("isLogged", false);
             localStorage.setItem("email", '');
             localStorage.setItem("name", '');

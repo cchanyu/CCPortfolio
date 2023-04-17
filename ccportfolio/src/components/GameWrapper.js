@@ -1,6 +1,6 @@
 import React from 'react'
-import '../css/GameWrapper.css'
-import GameScreen from './GameScreen'
+import GameScreen from '../game-components/GameScreen'
+import '../css/GameWrapper.scss'
 
 const GameWrapper = () => {
   return (

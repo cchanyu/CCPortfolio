@@ -8,7 +8,7 @@ import Battery2 from '../icon/battery-three-qt-solid.svg';
 import Battery3 from '../icon/battery-half-solid.svg';
 import Battery4 from '../icon/battery-quarter-solid.svg';
 import Battery5 from '../icon/battery-empty-solid.svg';
-import '../css/Topbar.css';
+import '../css/Topbar.scss';
 
 const Topbar = () => {
   const [status, setStatus] = useState('');

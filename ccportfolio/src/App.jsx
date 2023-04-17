@@ -15,7 +15,7 @@ import AboutIcon from './icon/id-card-solid.svg';
 import ProjectIcon from './icon/list-alt-solid.svg';
 import ContactIcon from './icon/edit-solid.svg';
 import GameIcon from './icon/gamepad-solid.svg';
-import './App.css'
+import './App.scss'
 
 const App = () => {
   const [ isLogged ] = useState(JSON.parse(localStorage.getItem('isLogged')));
@@ -29,11 +29,11 @@ const App = () => {
       <Routes className="route">
         <Route exact path="/CCPortfolio/home" element={<Home />}/>
         <Route path="/CCPortfolio" element={<Home />}/>
-        <Route path="CCPortfolio/game1" element={<GameWrapper />}/>
-        <Route path="CCPortfolio/about" element={<About />}/>
-        <Route path="CCPortfolio/project" element={<Project />}/>
-        <Route path="CCPortfolio/contact" element={isLogged ? <Contact /> : <Login />}/>
-        <Route path="CCPortfolio/login" element={<Login />}/>
+        <Route path="/CCPortfolio/game1" element={<GameWrapper />}/>
+        <Route path="/CCPortfolio/about" element={<About />}/>
+        <Route path="/CCPortfolio/project" element={<Project />}/>
+        <Route path="/CCPortfolio/contact" element={isLogged ? <Contact /> : <Login />}/>
+        <Route path="/CCPortfolio/login" element={<Login />}/>
       </Routes>
 
       {/* Navigation */}
